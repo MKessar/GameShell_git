@@ -6,6 +6,6 @@
 # but it is better to do it the "intended" way.
 # If you write this file, rename it to auto.sh
 
-git branch -d power new_ingredient add_rune
+. $GSH_TMP/add_remote_minas_co.sh
 gsh check
 
