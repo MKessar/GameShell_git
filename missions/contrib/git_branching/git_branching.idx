@@ -6,3 +6,5 @@
 05_merge
 06_merge_conflict
 07_delete_branch
+08_add_remote
+09_merge_remote
