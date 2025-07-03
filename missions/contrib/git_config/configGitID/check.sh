@@ -11,13 +11,19 @@
 # It typically looks like
 
 _mission_check() {
-
+cd $GSH_HOME/Castle/Portals
   # verifier que le repertoire existe et est un depot git
   git config --local user.email
-  if [ ! $? ]
+  
+test=$(echo $?)
+          
+  if [ $test -eq 1 ]
     then 
      git config --global user.email
-     if [ ! $? ]
+     
+     test=$(echo $?)
+          
+     if [ $test -eq 1 ]
       then
       echo " There is no user.email defined localy or globaly for git"
       return 1
@@ -25,12 +31,19 @@ _mission_check() {
     echo " user.email is defined"
     fi
   fi 
+  
   git config --local user.name
-  if [ ! $? ]
-    then 
+
+test=$(echo $?)
+          
+  if [ $test -eq 1 ]
+  then 
       git config --global user.name
-     if [ ! $? ]
-     then
+
+test=$(echo $?)
+          
+  if [ $test -eq 1 ]
+  then
       echo " There is no user.name definen localy or globaly for git"
       return 1
     else

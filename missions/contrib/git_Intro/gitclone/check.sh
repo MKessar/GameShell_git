@@ -14,7 +14,7 @@ _mission_check() {
 
   # verifier que le repertoire existe et est un depot git
 
-  if [ ! -d $GSH_HOME/Castle/Portals/celestial]
+  if [ ! -d $GSH_HOME/Castle/Portals/celestial ]
     then 
       echo " The repository  celestial doesn't exist"
       return 1
