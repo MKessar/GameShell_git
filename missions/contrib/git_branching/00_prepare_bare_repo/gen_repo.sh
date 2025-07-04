@@ -50,7 +50,6 @@ git checkout spell
 
 cp ../${repo}_files/${spell} .
 git add *
-git rm dragon_killer.spell
 git commit -m "Initial amplification spell" --author="$sorcerer1"
 
 version="changing_proportion"

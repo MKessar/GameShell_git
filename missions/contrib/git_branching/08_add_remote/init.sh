@@ -23,7 +23,10 @@ _mission_init() {
     then  echo "git not found"
     return 1
   fi
+
   cp $MISSION_DIR/PortalBook $GSH_HOME/Castle/Main_tower
+  . $GSH_TMP/clone.sh &> /dev/null 
+  git reset --hard db38949 &> /dev/null
   
 }
 _mission_init

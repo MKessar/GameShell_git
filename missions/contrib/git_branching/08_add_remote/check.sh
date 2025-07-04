@@ -28,7 +28,7 @@ _mission_check() {
         return 1
   fi
 
-  expected_name="rune_switch"
+  expected_name="adding_moisture"
   branch_created=$(git branch | grep $expected_name)
   if [ "$branch_created" = "" ]
     then
@@ -36,7 +36,7 @@ _mission_check() {
         return 1
   fi
 
-  expected_name="pineapple"
+  expected_name="switching_magma_earth"
   branch_created=$(git branch | grep $expected_name)
   if [ "$branch_created" = "" ]
     then
