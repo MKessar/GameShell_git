@@ -8,5 +8,11 @@
 # If you need this file, rename it to clean.sh
 
 # back to HOM in order to avoid getcwd error
-cd $GSH_HOME
-rm -rf $GSH_HOME/Castle/Portals/al_jeit
+
+if [ $GSH_LAST_ACTION = check_false ] 
+then
+  echo "Environment kept. If you want to start again from a clean one, \`gsh reset\`"
+else
+  cd $GSH_HOME
+  rm -rf $GSH_HOME/Castle/Portals/al_jeit
+fi
