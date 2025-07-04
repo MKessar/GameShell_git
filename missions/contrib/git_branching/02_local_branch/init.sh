@@ -25,8 +25,6 @@ _mission_init() {
   fi
 
   . $GSH_TMP/clone.sh &> /dev/null
-  git reset --hard 006e702 &> /dev/null
-  git push origin spell --force &> /dev/null
   cd ..
   
 }
