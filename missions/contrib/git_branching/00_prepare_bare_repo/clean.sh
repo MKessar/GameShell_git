@@ -11,7 +11,11 @@
 
 if [ $GSH_LAST_ACTION = check_false ] 
 then
-  echo "Environment kept. If you want to start again from a clean one, \`gsh reset\`"
+  echo "Environment kept. If you want to start again from a clean one:"
+  echo "gsh reset"
+  echo ""
+
+  touch $GSH_TMP/skip_init
 else
   cd $GSH_HOME
   rm -rf $GSH_HOME/Castle/Portals/al_jeit

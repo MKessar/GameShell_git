@@ -24,8 +24,14 @@ _mission_init() {
     return 1
   fi
 
-  . $GSH_TMP/clone.sh &> /dev/null
-  cd ..
+
+  if [ -f $GSH_TMP/skip_init ]
+  then
+    rm $GSH_TMP/skip_init
+  else
+    . $GSH_TMP/clone.sh &> /dev/null
+    cd ..
+  fi
   
 }
 _mission_init
