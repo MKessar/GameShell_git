@@ -8,6 +8,11 @@
 # Since it is sourced, it may define environment variables if you really need
 # them, but it should "unset" any local variable it has created.
 
+if ! git --version > /dev/null 2 > /dev/null
+then  echo "git not found"
+  return 1
+fi
+
 mkdir -p $GSH_HOME/Castle/Portals/
 mkdir -p $GSH_HOME/Castle/Main_tower
 cp $MISSION_DIR/PortalBook $GSH_HOME/Castle/Main_tower

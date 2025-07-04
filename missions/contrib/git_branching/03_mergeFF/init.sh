@@ -18,11 +18,15 @@
 #
 # It typically looks like
 _mission_init() {
-  # ...
 
-  . $GSH_TMP/clone.sh &> /dev/null
-  . $GSH_TMP/co.sh &> /dev/null
-  . $GSH_TMP/remove_marker_branch_repo.sh &> /dev/null
+  if [ -f $GSH_TMP/skip_init ]
+  then
+    rm $GSH_TMP/skip_init
+  else
+    . $GSH_TMP/clone.sh &> /dev/null
+    . $GSH_TMP/co.sh &> /dev/null
+    . $GSH_TMP/remove_marker_branch_repo.sh &> /dev/null
+  fi
   
 }
 _mission_init

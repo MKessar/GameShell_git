@@ -18,12 +18,6 @@
 #
 # It typically looks like
 _mission_init() {
-  # ...
-  if ! git --version &> /dev/null
-    then  echo "git not found"
-    return 1
-  fi
-
 
   if [ -f $GSH_TMP/skip_init ]
   then

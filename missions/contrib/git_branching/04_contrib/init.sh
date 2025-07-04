@@ -18,16 +18,16 @@
 #
 # It typically looks like
 _mission_init() {
-  # ...
-  if ! git --version > /dev/null 2 > /dev/null
-    then  echo "git not found"
-    return 1
-  fi
   
-  . $GSH_TMP/clone.sh &> /dev/null
-  . $GSH_TMP/co.sh &> /dev/null
-  git reset --hard adding_light &> /dev/null
-  . $GSH_TMP/remove_marker_branch_repo.sh &> /dev/null
+  if [ -f $GSH_TMP/skip_init ]
+  then
+    rm $GSH_TMP/skip_init
+  else
+    . $GSH_TMP/clone.sh &> /dev/null
+    . $GSH_TMP/co.sh &> /dev/null
+    git reset --hard adding_light &> /dev/null
+    . $GSH_TMP/remove_marker_branch_repo.sh &> /dev/null
+  fi
 
 }
 _mission_init
