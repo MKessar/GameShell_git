@@ -1,0 +1,23 @@
+Mission goal
+============
+
+As you can see, the dragon killer enchantment is in pretty weak version but it is amplified thanks to the amplification.spell. Even this amplification shows several contributions that have not been merged yet. The aim is to agregate all contributions of the amplification to the most powerful version of the dragon killer enchantment.
+
+There are several ways to do this. The most natural one is to create a branch ampli where all contributions on the amplifications started, typically on minas/spell. Then, merge all contributions (switching_magma_earth and adding_moisture) to ampli. Finally, as the most powerful version of the dragon killer is already on the spell branch, merging ampli into spell will do the job.
+
+
+Useful commands
+===============
+
+List available branches with
+git branch -a
+The "-a" option means "all" branches, i.e. branches that reflect the branches available on the remote repository on top of the local ones.
+
+Create a branch BRANCH_NAME pointing on commit REV
+git branch BRANCH_NAME REV
+
+To make HEAD point at branch BRANCH_NAME with an updated working directory
+git checkout BRANCH_NAME
+
+To merge BRANCH_NAME into the current branch you are on (your HEAD is pointing at) 
+git merge BRANCH_NAME
