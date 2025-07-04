@@ -30,6 +30,7 @@ _mission_init() {
     rm $GSH_TMP/skip_init
   else
     . $GSH_TMP/clone.sh &> /dev/null
+    . $GSH_TMP/remove_marker_branch_repo.sh &> /dev/null
     cd ..
   fi
   

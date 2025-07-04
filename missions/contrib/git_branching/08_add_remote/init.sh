@@ -26,7 +26,8 @@ _mission_init() {
 
   cp $MISSION_DIR/PortalBook $GSH_HOME/Castle/Main_tower
   . $GSH_TMP/clone.sh &> /dev/null 
-  git reset --hard db38949 &> /dev/null
+  git reset --hard origin/conflict_solved &> /dev/null
+  . $GSH_TMP/remove_marker_branch_repo.sh &> /dev/null
   
 }
 _mission_init

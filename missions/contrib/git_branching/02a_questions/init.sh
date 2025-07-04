@@ -25,6 +25,7 @@ _mission_init() {
   fi
   . $GSH_TMP/clone.sh &> /dev/null
   . $GSH_TMP/co.sh &> /dev/null
+  . $GSH_TMP/remove_marker_branch_repo.sh &> /dev/null
   
 }
 _mission_init

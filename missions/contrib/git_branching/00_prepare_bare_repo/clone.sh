@@ -1,5 +1,6 @@
 
 cd $GSH_HOME/Castle/Portals
+cp -r $GSH_TMP/solution1_repo $GSH_TMP/al_jeit
 git clone $GSH_TMP/al_jeit
 cd al_jeit
 if [ -f $GSH_TMP/gitconfig ]
@@ -19,6 +20,5 @@ git config --local alias.last "log -1 HEAD"
 git config --local alias.lo "log --oneline --graph --branches"
 
 
-git checkout spell
-git reset --hard 006e702
+git reset --hard origin/spell_init
 git push origin spell --force

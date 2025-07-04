@@ -27,7 +27,8 @@ _mission_init() {
   . $GSH_TMP/clone.sh &> /dev/null 
   . $GSH_TMP/co.sh &> /dev/null
   git reset --hard adding_light &> /dev/null
-  git checkout -b power 0c522b5 &> /dev/null
+  git checkout -b power origin/power_marker &> /dev/null
+  . $GSH_TMP/remove_marker_branch_repo.sh &> /dev/null
   
 }
 _mission_init

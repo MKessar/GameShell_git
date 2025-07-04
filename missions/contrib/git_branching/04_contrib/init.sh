@@ -27,6 +27,7 @@ _mission_init() {
   . $GSH_TMP/clone.sh &> /dev/null
   . $GSH_TMP/co.sh &> /dev/null
   git reset --hard adding_light &> /dev/null
+  . $GSH_TMP/remove_marker_branch_repo.sh &> /dev/null
 
 }
 _mission_init

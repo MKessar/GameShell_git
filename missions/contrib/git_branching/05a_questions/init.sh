@@ -25,8 +25,9 @@ _mission_init() {
   fi
   . $GSH_TMP/clone.sh &> /dev/null
   . $GSH_TMP/co.sh &> /dev/null
-  git reset --hard 00eb22d72 &> /dev/null
-  git branch power 0c522b5 &> /dev/null
+  git reset --hard origin/adding_earth_merged &> /dev/null
+  git branch power origin/power_marker &> /dev/null
+  . $GSH_TMP/remove_marker_branch_repo.sh &> /dev/null
   
 }
 _mission_init

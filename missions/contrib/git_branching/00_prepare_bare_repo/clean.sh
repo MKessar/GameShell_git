@@ -19,4 +19,5 @@ then
 else
   cd $GSH_HOME
   rm -rf $GSH_HOME/Castle/Portals/al_jeit
+  rm -rf $GSH_TMP/al_jeit
 fi

@@ -14,8 +14,9 @@ cp $MISSION_DIR/PortalBook $GSH_HOME/Castle/Main_tower
 cp $MISSION_DIR/clean.sh $GSH_TMP
 cp $MISSION_DIR/clone.sh $GSH_TMP
 cp $MISSION_DIR/co.sh $GSH_TMP
+cp $MISSION_DIR/remove_marker_branch_repo.sh $GSH_TMP
 cp $MISSION_DIR/add_remote_minas_co.sh $GSH_TMP
 
 
-cp -r $MISSION_DIR/solution_repo $GSH_TMP/al_jeit
+cp -r $MISSION_DIR/solution1_repo $GSH_TMP
 cp -r $MISSION_DIR/minas_tirith_repo $GSH_TMP/minas_tirith
