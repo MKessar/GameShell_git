@@ -31,6 +31,7 @@ git commit -am "$(echo $version | sed -e "s/_/ /g")" --author="$sorcerer2"
 mkdir ../${repo}_repo
 cd ../${repo}_repo
 git init --bare
+echo "ref: refs/heads/spell" > HEAD
 
 cd $OLDPWD
 git remote add ${repo} ../${repo}_repo
@@ -74,6 +75,7 @@ git commit -am "$(echo $version | sed -e "s/_/ /g")" --author="$sorcerer2"
 mkdir ../${repo}_repo
 cd ../${repo}_repo
 git init --bare
+echo "ref: refs/heads/spell" > HEAD
 
 cd $OLDPWD
 git remote add ${repo} ../${repo}_repo

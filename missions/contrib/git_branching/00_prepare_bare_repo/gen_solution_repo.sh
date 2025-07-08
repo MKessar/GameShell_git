@@ -1,7 +1,7 @@
 export GSH_TMP=$(realpath .)
 export GSH_HOME=$(realpath .)
-mkdir -p $GSH_HOME/Castle/Portals
-. $GSH_TMP/clone.sh
+git clone $GSH_TMP/al_jeit_repo ./solution1
+cd solution1
 . $GSH_TMP/co.sh
 
 git branch spell_init
