@@ -90,9 +90,18 @@ git push ${repo} spell adding_earth adding_light
 
 cd ..
 
+# Lord of the Rings repo
 gen_repo_spec "Gandalf <gandalf@lordsoftherings.book>" "Saroumane <saroumane@lordsoftherings.book>" \
 minas_tirith amplification.spell switching_magma_earth adding_moisture
 
+# Harry Potter repo
 gen_repo_spec "Albus Dumbledore <albus@harrypotter.book>" "Lord Voldemort <voledmort@harrypotter.book>" \
 hogwarts weaken.spell switching_dark_fire adding_poison
 
+# Narnia repo
+gen_repo_spec "Jadis <jadis@chroniclesnarnia.film>" "King beyond the Seas <king_beyond_seas@chroniclesnarnia.film>" \
+cair_paravel poison.spell switching_air_earth adding_dark
+
+# The Witcher repo
+gen_repo_spec "Yennefer de Vengerberg <yennefer@thewitcher.book>" "Ciri <ciri@thewitcher.book>" \
+novigrad no_regen.spell switching_water_dark adding_air
