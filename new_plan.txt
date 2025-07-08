@@ -78,10 +78,10 @@ Travail collaboratif
 2-4 étudiants sur un seul dépot.
 
 chaque étudiant n'a accès qu'à un des sorts suivant sur des dépôts séparés :  
-- diminution de la résitance à la magie
-- poison
-- blocage de la régénération de vie
-- sort d'artilelrie: lancer le sort 1000 fois d'un coup: caput le dragon
+- diminution de la résitance à la magie => harry potter,  Albus Dumbledore, Lord Voldemort, Hogwarts 
+- poison => The Chronicles of Narnia, Jadis,  king beyond the seas, Cair Paravel, 
+- blocage de la régénération de vie => Sorceleur, Yennefer de Vengerberg, Ciri, ville Novigrad 
+- sort d'artilelrie: lancer le sort 1000 fois d'un coup: caput le dragon => Eona, Eona, Sire Ido, Palais de Kygo
 
 
 le merge des branches des deux étudiants donne le sort final
