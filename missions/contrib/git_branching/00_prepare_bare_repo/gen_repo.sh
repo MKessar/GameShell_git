@@ -49,7 +49,7 @@ git clone al_jeit_repo ./${repo}
 cd ${repo}
 git checkout spell
 
-cp ../${repo}_files/${spell} .
+cp ../${repo}_files/${spell} ../${repo}_files/README.md .
 git add *
 git commit -m "Initial amplification spell" --author="$sorcerer1"
 
