@@ -1,0 +1,16 @@
+Mission goal
+============
+
+We are almost there ! Now enchantments pieces are partially gathered but still split between different forks. Use the merge request mechanism on the web interface to merge everything and pull the final dargon killer enchantment with all boosters locally. Hopefully the dragon will pass away...
+
+The wizard(s) that has(ve) forked the initial fork will now create a merge request on this initial fork on the web interface so all the pieces ou assembled on your side have a chance to be assembled all together. The owner of the initial fork should then accept all the merge requests on the web interface. Finally, he will need to pull locally the latest version of the `spell` branch that has been updated on the remote repository. The others will have to update their fork and pull similarly the latest version of the `spell` branch.
+
+Useful commands
+===============
+
+Operations are mainly done on the web interface
+
+To fetch and merge you can use pull shortcut
+git pull REMOTE BRANCH_NAME
+will fetch new commits from REMOTE and then merge BRANCH_NAME into the current branch
+
