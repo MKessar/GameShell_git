@@ -23,6 +23,7 @@ cp $MISSION_DIR/remove_marker_branch_repo.sh $GSH_TMP
 cp $MISSION_DIR/add_remote_minas_co.sh $GSH_TMP
 cp $MISSION_DIR/add_remote_myfork.sh $GSH_TMP
 cp $MISSION_DIR/add_remote_final_exo.sh $GSH_TMP
+cp $MISSION_DIR/merge_remote.sh $GSH_TMP
 
 
 cp -r $MISSION_DIR/solution1_repo $GSH_TMP
