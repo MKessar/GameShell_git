@@ -1,0 +1,30 @@
+Mission goal
+============
+
+Good, we have now new enchantments pieces to put together. Merge the pieces you are in charge of in the spell branch and, once done, push your new spell branch on your fork.
+
+Again, there are several ways of doing this. If you are in charge of several remotes, it is a good idea to merge contribution from remotes, one after the other.
+Like previously in the adventure, you can start of a new branch named `work` that points at the same commit as spell branch on the remote your working on. Then merge all branches into this `work` branch and finally merge the `work` into the `spell` branch.
+
+Useful commands
+===============
+
+To merge a branch. Ensure you are on the branch you want to merge into and then
+git merge BRANCH_NAME
+
+If you end up into a CONFLICT and would like to abort the current merge operation
+git merge --abort
+
+To change your HEAD on a branch and update the working directory
+git checkout BRANCH_NAME
+
+The full syntax to create a local branch NEW_BRANCH_NAME that will be connected to the REMOTE_BRANCH_NAME on the remote repository REMOTE is
+git checkout -b NEW_BRANCH_NAME REMOTE/REMOTE_BRANCH_NAME
+This gives full flexibility on naming and can ensure no ambiguity in the command
+
+In simple case (like ours), i.e. when there is a single remote and no name collision between branches 
+git checkout REMOTE_BRANCH_NAME
+will create a local branch REMOTE_BRANCH_NAME, that will be connected to the remote one
+
+Push a branch BRANCH_NAME on the remote REMOTE_NAME
+git push REMOTE_NAME BRANCH_NAME
