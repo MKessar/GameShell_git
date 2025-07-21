@@ -1,0 +1,23 @@
+Mission goal
+============
+
+Bad news, the dragon is not dead, he could regenerate and it is now standing again in front of the castle, more dangerous than ever.
+
+However, while the ground is shaking again, you got a telepathic contact of another wizard. Finally you are getting some help !
+
+Check the updated PortalBook and get in touch with this wizard. The objective is to gather all enchantment pieces as fast as possible, so split the work between you too and you will use the forking / merge request mechanism to put everything together.
+
+Until now you only fetched enchantment fragments (commits) and gathered (merged) them locally.
+In order to share spells with other wizards you will need an online place where to share them.
+So, one wizard forks the al_jeit portal (repository) on the gitlab web interface and creates a remote named `myfork` that will point to the newly created fork.
+The other(s) wizard(s) fork(s) the newly created forked repository by the first wizard on the gitlab web interface and creates also a remote named `myfork` that will point to his/her own fork.
+Finally push your `spell` branch on the fork and check everything is fine on the web interface.
+
+Useful commands
+===============
+
+Add a remote to your local repository
+git remote add REMOTE_NAME REPOSITORY_URL
+
+Push a branch BRANCH_NAME on the remote REMOTE_NAME
+git push REMOTE_NAME BRANCH_NAME
