@@ -83,6 +83,12 @@ chaque étudiant n'a accès qu'à un des sorts suivant sur des dépôts séparé
 - blocage de la régénération de vie => Sorceleur, Yennefer de Vengerberg, Ciri, ville Novigrad 
 - sort d'artilelrie: lancer le sort 1000 fois d'un coup: caput le dragon => Eona, Eona, Sire Ido, Palais de Kygo
 
+- création du fork et du remote en local pointant sur le fork
+- création des remotes liés aux amélioration dont il a la charge + création des branches locales
+- fusion branches locales dans spell et push dans le fork
+- fusion des forks via l'interface web + MAJ local
+
+
 
 le merge des branches des deux étudiants donne le sort final
 
