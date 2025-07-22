@@ -1,0 +1,61 @@
+Mission goal
+============
+
+Good, we have now new enchantments pieces to put together. Let us have a carefull look at them before doing anything.
+
+What does the contribution of this repository bring to our spell ?
+1. a new spell in the form of a .spell file
+2. a modification of the README.md file
+3. a modified version of the dragon_killer.spell
+4. both a new spell in the form of a .spell file and a modification of the README.md file
+
+The objective is to merge all these contributions in our `spell` branch. There are several ways of doing this. If you are in charge of several remotes, it is a good idea to merge contribution from remotes, one after the other.
+Like previously in the adventure, you can start of a new branch named `work` that points at the same commit as spell branch on the remote you are working on.
+
+How would you create that branch and make your HEAD point at it ? (Let us assume you are working on the hogwarts repository)
+1. git checkout -b work
+2. git branch work hogwarts/spell
+3. git branch work hogwarts/spell ; git checkout work
+4. git checkout hogwarts/spell
+5. git checkout -b work hogwarts/spell
+6. git checkout hogwarts/spell ; git branch work ; git checkout work
+
+
+Once this `work` branch is set up the idea is to merge all contributions of the repository into it. Do you expect any conflict here ?
+1. no
+2. yes on the README.md file
+3. yes on the dragon_killer.spell file
+4. yes on the LICENSE file
+
+Once this `work` branch contains all contributions of the repository, the idea is to merge it into our `spell` branch. Do you expect any conflict here ? As it is hard to foresee it from here, just answer the question looking at what would happen if any of the three contributions would be merged into `spell` 
+1. no
+2. yes on the README.md file
+3. yes on the dragon_killer.spell file
+4. yes on the LICENSE file
+
+
+Useful commands
+===============
+
+To look at the history of a local repository putting one commit per line (--oneline), showing diverging and converging history (--graph) and all local branches even if they are not part of the history of the commit pointed by HEAD
+git log --oneline --graph --branches
+
+To create a branch BRANCH_NAME pointing at the commit pointed by REF_LOG
+git branch BRANCH_NAME [REF_LOG]
+
+To create a branch BRANCH_NAME pointing at the commit pointed by REF_LOG and to make your HEAD point at it
+git checkout -b BRANCH_NAME [REF_LOG]
+
+
+REF_LOG is optional and can be:
+- HEAD (default behaviour when REF_LOG is not given)
+- a branch name, either local or referencing a remote one like hogwarts/spell
+- any commit referenced by its id, for instance 30c900f
+- any commit being an ancestor of a branch or HEAD, for instance HEAD^ references the immediate ancestor of HEAD, add_rune^^ references tha ancestor of the ancestor of the commit pointed by add_rune.
+
+To look at differences between revisions and working directory
+git diff [REF_LOG1 [REF_LOG2]]
+- With a single argument (REF_LOG1 is HEAD by default when no argument is given), it prints the differences between the current working directory and the latest revision
+- With two arguments (REF_LOG2 is HEAD by default when no argument is given), it prints the differences between REF_LOG1 and REF_LOG2
+
+
