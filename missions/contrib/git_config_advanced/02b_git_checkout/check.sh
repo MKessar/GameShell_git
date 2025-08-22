@@ -12,24 +12,16 @@
 
 _mission_check() {
 
-  # verifier que le repertoire existe et est un depot git
-     git status | grep -e "up to date with"
+ LANG=en_GB git branch | grep -e "tach"
 
   if [ ! $? ]
     then 
-      echo " You did not pushed all of your modifications"
-      return 1
+      return 0
     else
-        git status | grep -e "nothing to commit"
-        test=$(echo $?)
-          if [ ! $test ]
-            then 
-               echo " You did not commited all of your modifications"
-           return 1
-          else 
-           echo " You did pushed all of your modifications"
-         return 0 
-         fi
+              echo " You did not checkout the most recent commit"
+
+         return 1
+      
     fi
    
 }

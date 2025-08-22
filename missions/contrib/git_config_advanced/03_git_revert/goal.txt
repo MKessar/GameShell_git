@@ -1,0 +1,21 @@
+Mission goal
+============
+
+
+As you have seen it, the file you removed earlier is still stored.
+
+
+
+You can restore it and create a new commit in a single line of command.
+
+
+
+
+
+
+Useful commands
+===============
+
+git revert : revert the omdification of the previous commit: it does create a new commit number.
+
+
