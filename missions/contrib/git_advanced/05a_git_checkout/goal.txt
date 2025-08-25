@@ -5,24 +5,20 @@ You just removed the spell of truth from your spellbook.
 
 As mentionned earlier, the point of the synchronised Library is not just to share your spells, but also to keep track of your modifications.
 
-Even a deleted spell can be read throught the specific comand line.
+Even a deleted spell can be read through the specific comand line.
 
-Display(checkout) the previous version of your spellbook.
+Ask git with a checkout to update your working directory with a previous version of your spellbook, a version that still contains the truth spell in Chapter_1.
+
 
 Useful commands
 ===============
 
+git checkout COMMIT_ID
+COMMIT_ID can be the id given by `git log` or a branch name 
 
-If the commit number is a9zezaa62efbe114243ce35524b0ec6f91296f9f685a
+Warning: specifying directly a commit id will bring you in "detached HEAD". It is ok to explore this version of the project, but if some development should be done from this version, a proper new branch will be necessary.
 
-
-
-git checkout a9zezaa62efbe114243ce35524b0ec6f91296f9f685a
-
-will change the visible code to the commit number you provided.
-
-
-git log --pretty=oneline : will display the list of previous commit
+git log --oneline: will display the list of previous commit in a nicer way
 
 
 

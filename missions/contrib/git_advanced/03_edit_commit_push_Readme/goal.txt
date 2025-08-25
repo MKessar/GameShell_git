@@ -5,9 +5,9 @@ The front page of a SpellBook is important for magicians.
 
 It usually gives informations on the content of the SpellBook, and how to use it.
 
-Edit the front page (README.MD), and add a brief description of the first spell.
+Edit the front page (README.md), and add a brief description of the first spell.
 
-Then synchronise your spellbook woth the library
+Then synchronise your spellbook with the library
 
 
 Useful commands
@@ -23,12 +23,12 @@ when modifying a file you can commit the modification for this file in one go:
 git commit -m 'COMMIT_MESSAGE' FILENAME
 
 
-But staged modifications can work as well, and are usualy a beter practice:
+But staged modifications can work as well, and are usualy a better practice:
 
 git add FILENAME
 git commit -m 'COMMIT_MESSAGE'
 
-This allows you to modify multiple files whilst performing a single commit
+This allows you to modify multiple files while performing a single commit
 
 
 git push

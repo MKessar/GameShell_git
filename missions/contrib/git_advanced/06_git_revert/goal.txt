@@ -13,6 +13,6 @@ They just send you a message with a instant magic pigeon:
 Useful commands
 ===============
 
-git revert HEAD~0 : revert the modifications of the previous commit: it does create a new commit number.
+git revert HEAD : revert the modifications of the commit pointed by HEAD. One could have put a branch name here also. This commands creates a new commit which will cancel the modifications.
 
 git push
