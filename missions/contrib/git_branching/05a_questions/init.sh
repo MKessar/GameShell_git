@@ -28,6 +28,7 @@ _mission_init() {
     git reset --hard origin/adding_earth_merged &> /dev/null
     git branch power origin/power_marker &> /dev/null
     . $GSH_TMP/remove_marker_branch_repo.sh &> /dev/null
+    git co power
   fi
   
 }
