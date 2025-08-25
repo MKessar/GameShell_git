@@ -1,0 +1,18 @@
+Mission goal
+============
+
+You just removed the file spell of truth.
+
+When they saw your lastest commit, the previous wizzard of your castle was greatly confused.
+
+They just send you a message with a instant magic pigeon:
+
+"It took a lot of work to get this spell working properly. Please revert what you just did."
+
+
+Useful commands
+===============
+
+git revert : revert the modifications of the previous commit: it does create a new commit number.
+
+git push

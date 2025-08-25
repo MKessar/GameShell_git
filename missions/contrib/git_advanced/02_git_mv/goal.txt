@@ -1,0 +1,29 @@
+Mission goal
+============
+
+It can be conveniet to make chapters for your spells. 
+
+Create a First Chapter(called Chapter_1) and move both spells into that folder.
+
+Move your two spells into the first chapter.
+
+This can be done along with a stagged synchronisation.
+
+
+Useful commands
+===============
+
+
+git add FOLDER_NAME
+
+git mv FILE_NAME FOLDER_NAME/
+
+git status
+
+git commit -m "moving spell into Chapter_1"
+
+git push
+
+
+
+

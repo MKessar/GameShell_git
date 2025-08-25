@@ -1,3 +1,0 @@
-This file is not required. When it exists, it is displayed when sourcing 
-the "treasure.sh" file. (If no "treasure.sh" file exists, this file will 
-be ignored.)

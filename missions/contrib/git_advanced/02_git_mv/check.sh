@@ -12,23 +12,22 @@
 
 _mission_check() {
 
-
-
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/glowing_finger.sh" ]
     then 
-      echo " TrainingSpells doesn't exist"
+      echo " The file  glowing_finger.sh is not in Chapter_1"
       return 1
     else
-    echo " TrainingSpells  exist"
+    echo " The file  glowing_finger.sh  is in Chapter_1"
     fi
-
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/truth.sh" ]
+    
+ if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/truth.sh" ]
     then 
-      echo " The file  truth.sh doesn't exist"
+      echo " The file  truth.sh is not in Chapter_1"
       return 1
     else
-    echo " The file  truth.sh  exist"
+    echo " The file  truth.sh  is in Chapter_1"
     fi
+
 
   # verifier que le repertoire existe et est un depot git
   cd $GSH_HOME/Castle/Portals/TrainingSpells/
@@ -39,7 +38,7 @@ LANG=en_GB git status | grep -e "Untracked"
           
   if [ $test -eq 0 ]
     then 
-      echo " you should not have untracked file"
+      echo " you not have untracked file"
       return 1
   fi
    
@@ -66,5 +65,6 @@ test=$(echo $?)
            return 0 
        fi
     fi
+    
 }
 _mission_check

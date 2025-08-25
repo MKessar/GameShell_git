@@ -12,24 +12,28 @@
 
 _mission_check() {
 
-  # verifier que le repertoire existe et est un depot git
-  
- if [ ! -d "$GSH_HOME/Castle/Portals/TrainingSpells" ]
+
+ if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/truth.sh" ]
     then 
-      echo " There is no  TrainingSpells Forlder in Castle/Portals "
+      echo " The file  truth.sh is not in Chapter_1"
       return 1
-    else
-    echo " The depository  TrainingSpells  exist"
     fi
 
-  if [ ! -d $GSH_HOME/Castle/Portals/TrainingSpells/.git ]
+  # verifier que le repertoire existe et est un depot git
+     git branch | grep -e "tach"
+
+ if [ ! $? ]
     then 
-      echo " The depository  TrainingSpells is not a git depository"
+      echo " You did not checkout a previous commit"
       return 1
     else
-    echo " The depository  TrainingSpells is  a git depository "
-    fi
-    
-    return 0 
+      return 0 
+      
+ fi
+  
+
+
+
+   
 }
 _mission_check

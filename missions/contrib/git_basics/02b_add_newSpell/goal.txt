@@ -11,6 +11,7 @@ Useful commands
 ===============
 
 To add a file or modifications of a file to the staging area
+
 git add FILE_NAME
 
 

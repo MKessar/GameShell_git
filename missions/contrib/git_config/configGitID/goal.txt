@@ -12,17 +12,19 @@ You neeed to configure your git identity on your computer to be able to perfom "
 
 Useful commands
 ===============
+You Need to be in the portal room to configure your ID.
+
 
 If you only use one git server:
 
-git config --global user.name ”github_name”
-git config --global user.email ”me@email.fr”
+git config --global user.name GITHUBNAME
+git config --global user.email ME@EMAIL.FR
 
 
 If you only use multiple git servers, you can configure a local identidy in a repository:
 
-git config --local user.name ”github_name”
-git config --local user.email ”me@email.fr”
+git config --local user.name GITHUBNAME
+git config --local user.email ME@EMAIL.FR
 
 
 

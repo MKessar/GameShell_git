@@ -14,22 +14,35 @@ _mission_check() {
 
   # verifier que le repertoire existe et est un depot git
   
- if [ ! -d "$GSH_HOME/Castle/Portals/TrainingSpells" ]
+ if [ ! -d "$GSH_HOME/Castle/Portals/TrainingSpell" ]
     then 
-      echo " There is no  TrainingSpells Forlder in Castle/Portals "
+      echo " The depository  TrainingSpell doesn't exist"
       return 1
     else
-    echo " The depository  TrainingSpells  exist"
+    echo " The depository  TrainingSpell  exist"
     fi
 
-  if [ ! -d $GSH_HOME/Castle/Portals/TrainingSpells/.git ]
+  if [ ! -d $GSH_HOME/Castle/Portals/TrainingSpell/.git ]
     then 
-      echo " The depository  TrainingSpells is not a git depository"
+      echo " The depository TrainingSpell is not a git depository"
       return 1
     else
-    echo " The depository  TrainingSpells is  a git depository "
-    fi
-    
+      echo " The depository TrainingSpell is a git depository"
+  fi
+   
+  cd $GSH_HOME/Castle/Portals/TrainingSpell
+   
+  LANG=en_GB git remote show origin | grep git@
+
+
+  test=$(echo $?)
+          
+  if [ $test -eq 0 ]
+    then 
+      echo " you did not changed to SSH URL"
+      return 1
+  fi
+  
     return 0 
 }
 _mission_check

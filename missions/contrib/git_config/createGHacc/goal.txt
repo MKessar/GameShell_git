@@ -1,9 +1,9 @@
 Mission goal
 ============
 
-Some spellBook are accessible to anybody, but some require the approriate spellBook card.
+Some spellBook are accessible to anybody, but some require the approriate library card(Login and authenficiation on Github, Gitalb, ... ).
 
-To proceed with the next step of the training session, you need to create your first spellBook card.
+To proceed with the next step of the training session, you need to create your first library card.
 
 
 Remarks

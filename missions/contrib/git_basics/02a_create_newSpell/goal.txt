@@ -4,28 +4,22 @@ Mission goal
 
 Congratulation on getting your first spellbook.
 
-But what is a spell book without a spell ?
+
+You will start with the Glowing Finger spell. This one is usefull when you don't have a torch closeby.
+
 
 For your first synchronisation, we will go through a step by step process.
 
-First, step into your spellbook (change directory)
+Move the Glowing finger from the Castle's Library into your spellbook
 
-Grab your favorite pen, and write a spell which gives today's date and the current time when casted.
+Then step into your spellbook (change directory)
 
-Then have a look at the synchronisation state of your local book.
+Have a look at the synchronisation state of your local book.
 
 
 Useful commands
 ===============
-You need to create file named "date.sh" in your spellbook, so in the SmallWeels directory. For this, use your favourite text editor. If you do not have one, you can use gedit.
-To open a file with an editor
-gedit FILE_NAME
 
-To print the current time and day
-date
-
-To Run the script SCRIPT_NAME
-source SCRIPT_NAME 
 
 To show the the history of the whole repository
 git log 
@@ -35,6 +29,7 @@ git status
 
 To show the difference between your working directory and the laste version in the repository (in 99% of the time, to be precise the comparison is made with the version pointed by HEAD)
 git diff
+
 
 NB
 ===============
@@ -47,4 +42,9 @@ firefox https://docs.github.com/en/authentication/keeping-your-account-and-data-
 
 
 
+Optional
+===============
 
+To Run a script : 
+
+source SCRIPT_NAME 

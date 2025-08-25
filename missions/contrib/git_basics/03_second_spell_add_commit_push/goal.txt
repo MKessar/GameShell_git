@@ -3,36 +3,25 @@ Mission goal
 
 You now have a good idea of the synchronisation process.
 
+You can now synchronisze the spell of truth(truth.sh) as you did for the glowing finger spell.
 
-It might be usefull to regroup spells in chapters in your book.
-
-Create a first chapter (a directory) `Chapter_1`. Then create a spell "truth.sh" in this chapter which reminds you of an old thuth: "There is no spoon"
-
-TODO:
-- not sure it is a good idea to ask the students to write a shell script... To be discussed
-
-Apply the full synchronisation process to your new chapter and its content.
 
 
 Useful commands
 ===============
-you need to create file named "truth.sh"
 
 
-nano file.txt : opens a file with an editor
+You need to apply the same procedure in a single mission.
 
 
-source spell2.sh   : run the script spell2.sh 
+git add FILENAME : start tracking the file FILENAME
 
-echo "Some Message" : print "Some Message" in the shell
-
-mkdir Chapter_1
-
-git add Folder : 
-
-start tracking "Folder" and its content. It can be used to stagged all the modifications in that folder
-
-git commit -m " ...." : commit the stagged modifications 
+git commit -m 'COMMIT_MESSAGE'
 
 git push 
 
+
+Optional:
+
+
+source spell.sh   : run the script spell.sh 

@@ -1,0 +1,20 @@
+Mission goal
+============
+
+Althought the glowing finger spell is obviously usefull, the usefullness of the truth spell seems inexistant.
+
+Remove the truth spell from your your spellbook.
+
+
+Useful commands
+===============
+
+git rm FILENAME : remove the file FILENAME
+
+git commit -m 'COMMIT_MESSAGE'
+
+git push
+
+
+
+

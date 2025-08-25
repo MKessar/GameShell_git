@@ -13,25 +13,15 @@
 _mission_check() {
 
 
-
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/truth.sh" ]
     then 
-      echo " TrainingSpells doesn't exist"
-      return 1
+      echo " The file  draft.sh does not exist"
     else
-    echo " TrainingSpells  exist"
+    echo " The file  date.sh  should not exist anymore"
+    return 1
     fi
 
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/truth.sh" ]
-    then 
-      echo " The file  truth.sh doesn't exist"
-      return 1
-    else
-    echo " The file  truth.sh  exist"
-    fi
-
-  # verifier que le repertoire existe et est un depot git
-  cd $GSH_HOME/Castle/Portals/TrainingSpells/
+ cd $GSH_HOME/Castle/Portals/TrainingSpells/
 
 LANG=en_GB git status | grep -e "Untracked"
  
@@ -39,10 +29,33 @@ LANG=en_GB git status | grep -e "Untracked"
           
   if [ $test -eq 0 ]
     then 
-      echo " you should not have untracked file"
+      echo " you not have untracked file"
       return 1
   fi
-   
+  
+
+LANG=en_GB git status | grep -e "modified"
+ 
+  test=$(echo $?)
+          
+  if [ $test -eq 0 ]
+    then 
+      echo " you a modified file"
+      return 1
+  fi
+  
+  
+LANG=en_GB git status | grep -e "deleted"
+ 
+  test=$(echo $?)
+          
+  if [ $test -eq 0 ]
+    then 
+      echo " you deleted a file: use 'git rm' instead of 'rm'"
+      return 1
+  fi
+  
+  
 
     LANG=en_GB git status | grep -e "up to date with"
 test=$(echo $?)
@@ -66,5 +79,6 @@ test=$(echo $?)
            return 0 
        fi
     fi
+     
 }
 _mission_check

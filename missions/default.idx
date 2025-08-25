@@ -1,17 +1,16 @@
 # default Gameshell missions order
-
 #  basic/default.idx
 #  misc/01_cal_nostradamus
 #  intermediate/01_alias_la
 #  misc/02_nano_journal
 #  intermediate/02_alias_journal
 #  intermediate/03_tab_spider_lair
-  contrib/git_Intro/gitintro.idx
-  contrib/git_config/git_config.idx
+#  contrib/git_intro/git_intro.idx
+#  contrib/git_config/git_config.idx
   contrib/git_basics/git_basics.idx
-  contrib/git_config_advanced/git_config_advanced.idx
+  contrib/git_advanced/git_advanced.idx
   contrib/git_branching/git_branching.idx
-  contrib/git_beyond/git.idx
+#  contrib/git_beyond/git.idx
   FINAL_MISSION
 #  contrib/git_basics/git.idx
 #  contrib/git_ssh_key/git01

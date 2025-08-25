@@ -13,14 +13,14 @@
 _mission_check() {
 
 
- if [ ! -e "$GSH_HOME/Castle/Portals/SmallWeels/date.sh" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/glowing_finger.sh" ]
     then 
-      echo " The file  date.sh doesn't exist"
+      echo " The file  glowing_finger.sh doesn't exist"
       return 1
     else
-    echo " The file  date.sh  exist"
+    echo " The file  glowing_finger.sh  exist"
     fi
-  cd $GSH_HOME/Castle/Portals/SmallWeels/
+  cd $GSH_HOME/Castle/Portals/TrainingSpells/
 
   # verifier que le repertoire existe et est un depot git
    LANG=en_GB git status | grep -e "Untracked"

@@ -20,11 +20,14 @@
 _mission_init() {
   # ...
   mkdir -p $GSH_HOME/Castle/Portals/
+
   if ! git --version > /dev/null 2 > /dev/null
     then  echo "git not found"
     return 1
   fi
   
-  
+ mkdir -p $GSH_HOME/Castle/Main_building/
+ mkdir -p $GSH_HOME/Castle/Main_building/Library/
+
 }
 _mission_init

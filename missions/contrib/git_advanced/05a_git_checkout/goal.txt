@@ -1,0 +1,29 @@
+Mission goal
+============
+
+You just removed the spell of truth from your spellbook.
+
+As mentionned earlier, the point of the synchronised Library is not just to share your spells, but also to keep track of your modifications.
+
+Even a deleted spell can be read throught the specific comand line.
+
+Display(checkout) the previous version of your spellbook.
+
+Useful commands
+===============
+
+
+If the commit number is a9zezaa62efbe114243ce35524b0ec6f91296f9f685a
+
+
+
+git checkout a9zezaa62efbe114243ce35524b0ec6f91296f9f685a
+
+will change the visible code to the commit number you provided.
+
+
+git log --pretty=oneline : will display the list of previous commit
+
+
+
+
