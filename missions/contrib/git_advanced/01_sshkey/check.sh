@@ -37,7 +37,7 @@ _mission_check() {
 
   test=$(echo $?)
           
-  if [ $test -eq 0 ]
+  if [ $test -eq 1 ]
     then 
       echo " you did not changed to SSH URL"
       return 1
