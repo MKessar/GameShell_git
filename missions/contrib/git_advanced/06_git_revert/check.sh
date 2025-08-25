@@ -18,7 +18,7 @@ _mission_check() {
       return 1
     fi
 
-  git status | grep -e "up to date with"
+  LANG=en_GB git status | grep -e "up to date with"
 test=$(echo $?)
 
  if [ $test -eq 1 ]
@@ -26,7 +26,7 @@ test=$(echo $?)
       echo " You did not pushed all of your modifications"
       return 1
     else
-        git status | grep -e "nothing to commit"
+        LANG=en_GB git status | grep -e "nothing to commit"
         test=$(echo $?)
          if [ ! $test ]
             then 
