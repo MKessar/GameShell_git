@@ -19,10 +19,10 @@ _mission_check() {
       return 1
     fi
 
-  # verifier que le repertoire existe et est un depot git
      git branch | grep -e "tach"
+test=$(echo $?)
 
- if [ ! $? ]
+ if [ $test -eq 0 ]
     then 
       echo " You did not checkout a previous commit"
       return 1

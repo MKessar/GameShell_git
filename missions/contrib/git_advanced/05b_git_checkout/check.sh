@@ -13,8 +13,9 @@
 _mission_check() {
 
  LANG=en_GB git branch | grep -e "tach"
+test=$(echo $?)
 
-  if [ ! $? ]
+ if [ $test -eq 1 ]
     then 
       return 0
     else

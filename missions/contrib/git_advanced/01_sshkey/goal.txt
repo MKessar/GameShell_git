@@ -26,11 +26,13 @@ firefox https://docs.github.com/en/authentication/connecting-to-github-with-ssh/
 
 
 New clone with ssh:
-git clone git@github.com:OWNER/REPOSITORY.git ./ProUser
+git clone git@github.com:OWNER/REPOSITORY.git 
 
 
 
 Switching remote URLs from HTTPS to SSH
+
+from your local folder (TrainingSpell for instance) type:
 
 git remote set-url origin git@github.com:OWNER/REPOSITORY.git
 
