@@ -19,13 +19,13 @@ check_branches() {
   if [ "$(grep $repo $GSH_TMP/remotes_url)" != "" ]
   then
     branch=$branch1
-    if [ "$(git branch | grep $branch)" = "" ]
+    if [ "$(LANG=GB git branch | grep $branch)" = "" ]
     then
       echo "Branch $branch from repository $repo has not been created..."
       return 1
     fi
     branch=$branch2
-    if [ "$(git branch | grep $branch)" = "" ]
+    if [ "$(LANG=GB git branch | grep $branch)" = "" ]
     then
       echo "Branch $branch from repository $repo has not been created..."
       return 1
@@ -48,19 +48,19 @@ _mission_check() {
       return 1
   fi
 
-  current_branch=$(git branch --show-current)
+  current_branch=$(LANG=GB git branch --show-current)
   if [ "$current_branch" != "spell" ]
     then
         echo "You are not on the spell branch..."
         return 1
   fi
 
-  all_remotes=$(git remote show)
+  all_remotes=$(LANG=GB git remote show)
   rm -f $GSH_TMP/remotes_url
   touch $GSH_TMP/remotes_url
   for r in $all_remotes 
   do  
-    git remote show $r | grep "Push  URL" >> $GSH_TMP/remotes_url
+    LANG=GB git remote show $r | grep "Push  URL" >> $GSH_TMP/remotes_url
   done
   
   nb_repo=$(wc -l $GSH_TMP/remotes_url | cut -d ' ' -f 1)
@@ -80,7 +80,7 @@ _mission_check() {
   if [ $? = "1" ] ; then return 1 ; fi
 
   # Store the address of the fork of the user in $GSH_TMP to set it properly in the following init
-  url=$(git remote show myfork | grep "Push  URL" | tr -s ' ' | cut -d ' ' -f 4)
+  url=$(LANG=GB git remote show myfork | grep "Push  URL" | tr -s ' ' | cut -d ' ' -f 4)
   echo $url > $GSH_TMP/fork_url
 
 

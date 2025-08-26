@@ -21,7 +21,7 @@ _mission_check() {
       return 1
   fi
 
-  current_branch=$(git branch --show-current)
+  current_branch=$(LANG=GB git branch --show-current)
   if [ "$current_branch" != "spell" ]
     then
         echo "You are not on the spell branch..."
@@ -29,7 +29,7 @@ _mission_check() {
   fi
 
   branch=adding_moisture
-  log=$(git branch --merged | grep $branch)
+  log=$(LANG=GB git branch --merged | grep $branch)
   if [ "$log" = "" ]
     then
         echo "$branch branch is not merged..."
@@ -37,7 +37,7 @@ _mission_check() {
   fi
 
   branch=switching_magma_earth
-  log=$(git branch --merged | grep $branch)
+  log=$(LANG=GB git branch --merged | grep $branch)
   if [ "$log" = "" ]
     then
         echo "$branch branch is not merged..."

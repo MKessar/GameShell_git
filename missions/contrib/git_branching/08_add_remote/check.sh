@@ -21,7 +21,7 @@ _mission_check() {
       return 1
   fi
 
-  current_branch=$(git branch --show-current)
+  current_branch=$(LANG=GB git branch --show-current)
   if [ "$current_branch" != "spell" ]
     then
         echo "You are not on the spell branch..."
@@ -29,7 +29,7 @@ _mission_check() {
   fi
 
   expected_name="adding_moisture"
-  branch_created=$(git branch | grep $expected_name)
+  branch_created=$(LANG=GB git branch | grep $expected_name)
   if [ "$branch_created" = "" ]
     then
         echo "Improvement $expected_name is not available..."
@@ -37,7 +37,7 @@ _mission_check() {
   fi
 
   expected_name="switching_magma_earth"
-  branch_created=$(git branch | grep $expected_name)
+  branch_created=$(LANG=GB git branch | grep $expected_name)
   if [ "$branch_created" = "" ]
     then
         echo "Improvement $expected_name is not available..."

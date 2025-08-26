@@ -17,14 +17,14 @@ check_branches() {
   if [ -f $GSH_TMP/$repo ]
   then
     branch=$branch1
-    log=$(git branch spell --contains $branch)
+    log=$(LANG=GB git branch spell --contains $branch)
     if [ "$log" = "" ]
     then
       echo "$branch branch is not merged into spell..."
       return 1
     fi
     branch=$branch2
-    log=$(git branch spell --contains $branch)
+    log=$(LANG=GB git branch spell --contains $branch)
     if [ "$log" = "" ]
     then
       echo "$branch branch is not merged into spell..."
@@ -45,7 +45,7 @@ _mission_check() {
       return 1
   fi
 
-  current_branch=$(git branch --show-current)
+  current_branch=$(LANG=GB git branch --show-current)
   if [ "$current_branch" != "spell" ]
     then
         echo "You are not on the spell branch..."
@@ -61,7 +61,7 @@ _mission_check() {
   check_branches novigrad adding_air switching_water_dark
   if [ $? = "1" ] ; then return 1 ; fi
 
-  uptodate=$(git remote show myfork | grep "spell pushes to spell" | grep "up-to-date")
+  uptodate=$(LANG=GB git remote show myfork | grep "spell pushes to spell" | grep "up-to-date")
   if [ "$uptodate" = "" ]
     then
         echo "Branch spell has not been pushed to the forked repository..."

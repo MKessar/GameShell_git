@@ -21,7 +21,7 @@ _mission_check() {
       return 1
   fi
 
-  current_branch=$(git branch --show-current)
+  current_branch=$(LANG=GB git branch --show-current)
   if [ "$current_branch" != "spell" ]
     then
         echo "You are not on the spell branch..."
@@ -29,14 +29,14 @@ _mission_check() {
   fi
 
   expected_name="myfork"
-  remote=$(git remote show | grep $expected_name)
+  remote=$(LANG=GB git remote show | grep $expected_name)
   if [ "$remote" = "" ]
     then
         echo "Remote $expected_name does not exist..."
         return 1
   fi
 
-  uptodate=$(git remote show myfork | grep "spell pushes to spell" | grep "up-to-date")
+  uptodate=$(LANG=GB git remote show myfork | grep "spell pushes to spell" | grep "up-to-date")
   if [ "$uptodate" = "" ]
     then
         echo "Branch spell has not been pushed to the forked repository..."
@@ -44,7 +44,7 @@ _mission_check() {
   fi
 
   # Store the address of the fork of the user in $GSH_TMP to set it properly in the following init
-  url=$(git remote show myfork | grep "Push  URL" | tr -s ' ' | cut -d ' ' -f 4)
+  url=$(LANG=GB git remote show myfork | grep "Push  URL" | tr -s ' ' | cut -d ' ' -f 4)
   echo $url > $GSH_TMP/fork_url
 
 
