@@ -61,7 +61,7 @@ _mission_check() {
   check_branches novigrad adding_air switching_water_dark
   if [ $? = "1" ] ; then return 1 ; fi
 
-  uptodate=$(LANG=GB git remote show myfork | grep "spell pushes to spell" | grep "up-to-date")
+  uptodate=$(LANG=GB git remote show myfork | grep "spell pushes to spell" | grep "up to date")
   if [ "$uptodate" = "" ]
     then
         echo "Branch spell has not been pushed to the forked repository..."
