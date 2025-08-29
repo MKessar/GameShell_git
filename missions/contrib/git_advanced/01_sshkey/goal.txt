@@ -1,7 +1,7 @@
 Mission goal
 ============
 
-Providing the token and your userid every time you make a full synchronisation is irritating and annoying.
+Providing your token/password and your userid every time you make a full synchronisation is irritating and annoying.
 
 Instead of cloning a repository with https, you can do it with an ssh key.
 
@@ -9,31 +9,25 @@ Instead of cloning a repository with https, you can do it with an ssh key.
 
 The exact procedure for this might defer from one server provider to another.
 
-Github's documentation can walk you throught this.
+Github's documentation can walk you through this.
 
 
 
 Useful commands
 ===============
 
-you can either :
--remove your current TrainingSpell folder in the Portal room and clone it again using ssh.
--change the status of your local folder from https to ssh authentification.
-
-
-
 firefox https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+Then you can either :
+-remove your current TrainingSpells folder in the Portal room and clone it again using ssh.
+-change the status of your local folder from https to ssh authentification.
 
 
 New clone with ssh:
 git clone git@github.com:OWNER/REPOSITORY.git 
 
 
-
-Switching remote URLs from HTTPS to SSH
-
-from your local folder (TrainingSpell for instance) type:
-
+Switching remote URLs from HTTPS to SSH, from your local folder (TrainingSpells for instance) type:
 git remote set-url origin git@github.com:OWNER/REPOSITORY.git
 
 

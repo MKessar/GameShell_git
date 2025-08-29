@@ -1,31 +1,24 @@
 Mission goal
 ============
 
-The magic concil likes to keep a record of the modifications on the library.
+The magic concil wants to keep a record of any modifications on the library.
 
-They also need to keep track of whom has made changes, just for safety reason.
+They also need to keep track of who has made changes, just for safety reason. That's why they want you to include your identity in your staff.
 
-You neeed to configure your git identity on your computer to be able to perfom "commits"(this term be defined later).
+You neeed to configure your git identity on your computer to be able to perfom "commits" (this term will be defined later).
 
-
-
+You Need to be in spellbook to configure your ID.
 
 Useful commands
 ===============
-You Need to be in the portal room to configure your ID.
 
-
-If you only use one git server:
-
-git config --global user.name GITHUBNAME
-git config --global user.email ME@EMAIL.FR
-
-
-If you only use multiple git servers, you can configure a local identidy in a repository:
-
-git config --local user.name GITHUBNAME
+git config --local user.name "FIRSTNAME LASTNAME"
 git config --local user.email ME@EMAIL.FR
 
+NB:
+
+The same commands can be run with `--global` instead of `--local` which is recommended if you have the same identity for all your projects. 
+But it will not work inside gameshell, so stick to `--local` please.
 
 
 

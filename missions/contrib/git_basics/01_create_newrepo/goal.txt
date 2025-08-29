@@ -1,19 +1,18 @@
 Mission goal
 ============
 
-The emmissary needs to leave for an other castle, and gives you a few intructions from the magic council to learn the rest by yourself. 
-
-
 According to the Head of the Magic Concil, some spellbooks have been altered in the past, due to avoidable mistakes. 
 
+The Head of the magic council has then sent an emmissary to your castle with an urgent request: all spells created from now on should be put on the SpellBook library (Github, gitlab...) and older ones sitting in Libraries also.
 
-When you arrived as a wizzard in your current Castle, the previous wizzard left a few spells he was working on, without synchronizing them with the SpellBook Library(Github; gitlab...).
+When you arrived as a wizzard in your current Castle, the previous wizzard left a few spells he was working on, without synchronizing them with the SpellBook Library
 
 Saving the spell of the previous wizzard without the need of creating a spell yourself is a good training.
 
 
-You will start by creating a spellbook(repository) on at the interdimensional library(github)
+You will start by creating a spellbook (repository) on at the interdimensional library (github).
 
+Go to the Portal room and clone your repository there
 
 
 Useful commands
@@ -25,9 +24,6 @@ You need to create a repository on github for training purpose only.
 call it "TrainingSpells"
 
 On creation you can create a "README" file. We suggest you to do that
-
-Go to the Portal and clone your repository there
-
 
 git clone https://github.com/MyLogin/TrainingSpells.git
 
