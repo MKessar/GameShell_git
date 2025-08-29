@@ -13,9 +13,10 @@ then  echo "git not found"
   return 1
 fi
 
+echo "#######################"
 mkdir -p $GSH_HOME/Castle/Portals/
-mkdir -p $GSH_HOME/Castle/Main_tower
-cp $MISSION_DIR/PortalBook $GSH_HOME/Castle/Main_tower
+mkdir -p $GSH_HOME/Castle/Main_building/Library
+cp $MISSION_DIR/PortalBook $GSH_HOME/Castle/Main_building/Library/
 cp $MISSION_DIR/clean.sh $GSH_TMP
 cp $MISSION_DIR/clone.sh $GSH_TMP
 cp $MISSION_DIR/co.sh $GSH_TMP

@@ -9,6 +9,6 @@
 # them, but it should "unset" any local variable it has created.
 
 mkdir -p $GSH_HOME/Castle/Portals/
-mkdir -p $GSH_HOME/Castle/Main_tower/First_floor
-cp $MISSION_DIR/ArcaneBook $GSH_HOME/Castle/Main_tower/First_floor
+mkdir -p $GSH_HOME/Castle/Main_building/Library
+cp $MISSION_DIR/ArcaneBook $GSH_HOME/Castle/Main_building/Library
 

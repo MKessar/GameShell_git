@@ -23,7 +23,7 @@ _mission_init() {
   then
     rm $GSH_TMP/skip_init
   else
-    cp $MISSION_DIR/PortalBook $GSH_HOME/Castle/Main_tower
+    cp $MISSION_DIR/PortalBook $GSH_HOME/Castle/Main_building/Library/
     . $GSH_TMP/clone.sh &> /dev/null 
     git reset --hard origin/merge_remote &> /dev/null
     . $GSH_TMP/remove_marker_branch_repo.sh &> /dev/null
