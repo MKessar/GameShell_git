@@ -7,6 +7,7 @@ Congratulation on getting your first spellbook.
 
 You will start with the Glowing Finger spell. This one is usefull when you don't have a torch closeby.
 
+The scroll for this spell contains the list of ingredients required to cast this spell.
 
 For your first synchronisation, we will go through a step by step process.
 
@@ -40,11 +41,3 @@ you might be asked to create a token through github you can acces the documentat
 
 firefox https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
 
-
-
-Optional
-===============
-
-To Run a script : 
-
-source SCRIPT_NAME 

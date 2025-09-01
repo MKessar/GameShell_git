@@ -16,9 +16,9 @@ fi
 mkdir -p $GSH_HOME/Castle/Portals/
 mkdir -p $GSH_HOME/Castle/Main_building/Library
 
-cp $MISSION_DIR/truth.sh $GSH_HOME/Castle/Main_building/Library/
+cp $MISSION_DIR/truth_spell $GSH_HOME/Castle/Main_building/Library/
 
-cp $MISSION_DIR/glowing_finger.sh $GSH_HOME/Castle/Main_building/Library/
+cp $MISSION_DIR/glowing_finger_spell $GSH_HOME/Castle/Main_building/Library/
 
 
 

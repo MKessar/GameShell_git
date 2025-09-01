@@ -12,12 +12,12 @@
 
 _mission_check() {
 
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/glowing_finger.sh" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/glowing_finger_spell" ]
     then 
-      echo " The file  glowing_finger.sh doesn't exist"
+      echo " The file  glowing_finger_spell doesn't exist"
       return 1
     else
-    echo " The file  glowing_finger.sh  exist"
+    echo " The file  glowing_finger_spell  exist"
     fi
   cd $GSH_HOME/Castle/Portals/TrainingSpells/
 

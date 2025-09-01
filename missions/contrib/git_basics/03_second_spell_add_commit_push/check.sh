@@ -22,12 +22,12 @@ _mission_check() {
     echo " TrainingSpells  exist"
     fi
 
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/truth.sh" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/truth_spell" ]
     then 
-      echo " The file  truth.sh doesn't exist"
+      echo " The file  truth_spell doesn't exist"
       return 1
     else
-    echo " The file  truth.sh  exist"
+    echo " The file truth_spell  exist"
     fi
 
   # verifier que le repertoire existe et est un depot git

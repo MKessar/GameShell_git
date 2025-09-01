@@ -12,20 +12,20 @@
 
 _mission_check() {
 
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/glowing_finger.sh" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/glowing_finger_spell" ]
     then 
-      echo " The file  glowing_finger.sh is not in Chapter_1"
+      echo " The file  glowing_finger_spell is not in Chapter_1"
       return 1
     else
-    echo " The file  glowing_finger.sh  is in Chapter_1"
+    echo " The file  glowing_finger_spell  is in Chapter_1"
     fi
     
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/truth.sh" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/truth_spell" ]
     then 
-      echo " The file  truth.sh is not in Chapter_1"
+      echo " The file  truth_spell is not in Chapter_1"
       return 1
     else
-    echo " The file  truth.sh  is in Chapter_1"
+    echo " The file  truth_spell is in Chapter_1"
     fi
 
 

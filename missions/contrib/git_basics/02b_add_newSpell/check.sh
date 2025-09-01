@@ -12,27 +12,27 @@
 
 _mission_check() {
 
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/glowing_finger.sh" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/glowing_finger_spell" ]
     then 
-      echo " The file  glowing_finger.sh doesn't exist"
+      echo " The file glowing_finger_spell doesn't exist"
       return 1
     else
-    echo " The file  glowing_finger.sh  exist"
+    echo " The file glowing_finger_spell exist"
     fi
 
   # verifier que le repertoire existe et est un depot git
   cd $GSH_HOME/Castle/Portals/TrainingSpells/
-   LANG=en_GB git status | grep -e "new file:   glowing_finger.sh"
+   LANG=en_GB git status | grep -e "new file:   glowing_finger_spell"
 
 test=$(echo $?)
           
   if [ $test -eq 0 ]
     then 
-      echo " glowing_finger.sh is a new tracked file"
+      echo " glowing_finger_spell is a new tracked file"
       return 0
     else
 
-     echo " glowing_finger.sh is not a new tracked file"
+     echo " glowing_finger_spell is not a new tracked file"
       return 1
     
 #         git status | grep -e "nothing to commit"

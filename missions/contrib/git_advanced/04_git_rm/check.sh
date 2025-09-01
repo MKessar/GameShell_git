@@ -13,11 +13,11 @@
 _mission_check() {
 
 
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/truth.sh" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/truth_spell" ]
     then 
-      echo " The file truth.sh does not exist"
+    #  echo " The file truth_spell does not exist"
     else
-    echo " The file  truth.sh  should not exist anymore"
+    echo " The file  truth_spell  should not exist anymore"
     return 1
     fi
 
