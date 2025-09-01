@@ -22,12 +22,12 @@ _mission_check() {
      git branch | grep -e "tach"
 test=$(echo $?)
 
- if [ $test -eq 0 ]
+ if [ $test -eq 1 ]
     then 
       echo " You did not checkout a previous commit"
-      return 1
+      return 0
     else
-      return 0 
+      return 1 
       
  fi
   
