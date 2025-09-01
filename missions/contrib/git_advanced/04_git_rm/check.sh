@@ -15,9 +15,9 @@ _mission_check() {
 
  if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/truth.sh" ]
     then 
-      echo " The file  draft.sh does not exist"
+      echo " The file truth.sh does not exist"
     else
-    echo " The file  date.sh  should not exist anymore"
+    echo " The file  truth.sh  should not exist anymore"
     return 1
     fi
 
@@ -33,16 +33,6 @@ LANG=en_GB git status | grep -e "Untracked"
       return 1
   fi
   
-
-LANG=en_GB git status | grep -e "modified"
- 
-  test=$(echo $?)
-          
-  if [ $test -eq 0 ]
-    then 
-      echo " you a modified file"
-      return 1
-  fi
   
   
 LANG=en_GB git status | grep -e "deleted"
@@ -51,7 +41,7 @@ LANG=en_GB git status | grep -e "deleted"
           
   if [ $test -eq 0 ]
     then 
-      echo " you deleted a file: use 'git rm' instead of 'rm'"
+      echo " you deleted a file: use 'git rm' instead of 'rm' and/or commit your modifications"
       return 1
   fi
   

@@ -28,7 +28,7 @@ test=$(echo $?)
     else
         LANG=en_GB git status | grep -e "nothing to commit"
         test=$(echo $?)
-         if [ ! $test ]
+         if [ $test -eq 1 ]
             then 
                echo " You did not commited all of your modifications"
            return 1
@@ -36,7 +36,7 @@ test=$(echo $?)
           
              LANG=en_GB git branch | grep -e "tach"
 
-             if [ $test -eq 1 ]
+             if [ $test -eq 0 ]
                 then 
                   return 0
                 else
