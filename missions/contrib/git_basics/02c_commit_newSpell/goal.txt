@@ -3,14 +3,15 @@ Mission goal
 
 Indeed, the spell is now tracked but not synchronised yet. 
 
-Before synchronisation, you need to create a version of your spell to your local antena of the portal system. 
+Before synchronisation, you need to create a snapshot of your spell in your local spellbook, in the portal room. 
 
 Have a look at the state of the synchronisation again
 
 Useful commands
 ===============
 
-To create a snaphot of for all the staged modifications as new version
+To create a snaphot of for all the staged modifications as a new version of your code
+
 git commit -m 'COMMIT_MESSAGE'
 
 
