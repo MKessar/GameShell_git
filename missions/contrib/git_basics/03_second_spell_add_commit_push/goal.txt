@@ -3,7 +3,7 @@ Mission goal
 
 You now have a good idea of the synchronisation process.
 
-You can now synchronisze the spell of truth(truth.sh) as you did for the glowing finger spell.
+You can now synchronisze the spell of truth (truth_spell) as you did for the glowing finger spell.
 
 
 
