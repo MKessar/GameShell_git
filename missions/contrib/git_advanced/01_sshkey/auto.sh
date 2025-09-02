@@ -5,3 +5,5 @@
 # It is sometimes possible to "cheat" by using any hidden data in $GSH_TMP,
 # but it is better to do it the "intended" way.
 # If you write this file, rename it to auto.sh
+
+echo "TODO when solution repo will be set up"

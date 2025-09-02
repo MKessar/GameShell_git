@@ -5,3 +5,11 @@
 # It is sometimes possible to "cheat" by using any hidden data in $GSH_TMP,
 # but it is better to do it the "intended" way.
 # If you write this file, rename it to auto.sh
+
+cd $GSH_HOME/Castle/Portals/TrainingSpells
+mv ../../Main_building/Library/truth_spell .
+git add truth_spell
+git commit -m "truth spell added"
+git push
+gsh check
+

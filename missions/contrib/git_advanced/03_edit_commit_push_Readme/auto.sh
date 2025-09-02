@@ -5,3 +5,9 @@
 # It is sometimes possible to "cheat" by using any hidden data in $GSH_TMP,
 # but it is better to do it the "intended" way.
 # If you write this file, rename it to auto.sh
+
+cd $GSH_HOME/Castle/Portals/TrainingSpells
+echo "Glowing finger and Truth spells" >> README.md 
+git commit -am "README updated"
+git push 
+gsh check
