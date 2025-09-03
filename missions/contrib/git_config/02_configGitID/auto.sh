@@ -7,5 +7,6 @@
 # If you write this file, rename it to auto.sh
 
 cd $GSH_HOME/Castle/Portals/TrainingSpells
-git config --local user.name "FIRSTNAME LASTNAME"
-git config --local user.email ME@EMAIL.FR
+git config --local user.name "Jafar"
+git config --local user.email jafar@aladin.cool
+gsh check

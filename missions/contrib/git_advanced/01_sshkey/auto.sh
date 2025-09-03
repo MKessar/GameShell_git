@@ -6,4 +6,5 @@
 # but it is better to do it the "intended" way.
 # If you write this file, rename it to auto.sh
 
-echo "TODO when solution repo will be set up"
+git remote set-url origin git@plmlab.math.cnrs.fr:gameshell_git/al_jeit.git
+gsh check

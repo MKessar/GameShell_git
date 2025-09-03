@@ -7,5 +7,5 @@
 # If you write this file, rename it to auto.sh
 
 cd Castle/Portals/
-mkdir -p TrainingSpells/.git
-
+. $GSH_TMP/clone.sh
+gsh check
