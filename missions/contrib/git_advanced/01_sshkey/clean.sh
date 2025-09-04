@@ -1,0 +1,1 @@
+../../git_basics/00_needed_files/clean.sh
