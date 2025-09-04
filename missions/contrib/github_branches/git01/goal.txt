@@ -2,7 +2,7 @@ Mission goal
 ============
 
 
-Branches are usefull when dealing with multiple project on the same git depository.
+Branches are usefull when dealing with multiple project on the same git repository.
 
 If you are trying to implement a new model, or work on the optimisation of your code, you might need a separate branch for those.
 

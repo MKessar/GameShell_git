@@ -16,18 +16,18 @@ _mission_check() {
   
  if [ ! -d "$GSH_HOME/Castle/Portals/TrainingSpells" ]
     then 
-      echo " The depository  TrainingSpells doesn't exist"
+      echo " The repository  TrainingSpells doesn't exist"
       return 1
     else
-    echo " The depository  TrainingSpells  exist"
+    echo " The repository  TrainingSpells  exist"
     fi
 
   if [ ! -d $GSH_HOME/Castle/Portals/TrainingSpells/.git ]
     then 
-      echo " The depository TrainingSpells is not a git depository"
+      echo " The repository TrainingSpells is not a git repository"
       return 1
     else
-      echo " The depository TrainingSpells is a git depository"
+      echo " The repository TrainingSpells is a git repository"
   fi
    
   cd $GSH_HOME/Castle/Portals/TrainingSpells

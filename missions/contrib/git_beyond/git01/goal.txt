@@ -10,7 +10,7 @@ Most of those exercices where done assuming you would be using github.
 But there are other providers for git, such as gitlab or PLMLab for french mathematicians.
 
 
-You might want to be ablble to configure multiple git identites, and link them to specific depository on your computer.
+You might want to be ablble to configure multiple git identites, and link them to specific repository on your computer.
 
 The cannot be donne within game shell, but We can provide you with documentation.
 

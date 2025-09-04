@@ -20,7 +20,7 @@ Then provide your github login when performing the gsh check.
 
 the url for github is: https://github.com/
 
-the documentation on creating a github depository is here: https://docs.github.com
+the documentation on creating a github repository is here: https://docs.github.com
 
 
 

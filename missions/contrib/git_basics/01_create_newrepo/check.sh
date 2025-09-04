@@ -19,15 +19,15 @@ _mission_check() {
     echo " There is no  TrainingSpells Forlder in Castle/Portals "
     return 1
   else
-    echo " The depository  TrainingSpells  exist"
+    echo " The repository  TrainingSpells  exist"
   fi
 
   if [ ! -d $GSH_HOME/Castle/Portals/TrainingSpells/.git ]
   then 
-    echo " The depository  TrainingSpells is not a git depository"
+    echo " The repository  TrainingSpells is not a git repository"
     return 1
   else
-    echo " The depository  TrainingSpells is  a git depository "
+    echo " The repository  TrainingSpells is  a git repository "
   fi
 
   # Store the address of the fork of the user in $GSH_TMP to set it properly in the following init

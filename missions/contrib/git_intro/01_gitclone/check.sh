@@ -24,10 +24,10 @@ _mission_check() {
 
   if [ ! -d $GSH_HOME/Castle/Portals/celestial/.git ]
     then 
-      echo " The repository  celestial is not a git depository"
+      echo " The repository  celestial is not a git repository"
       return 1
     else
-    echo " The repository  celestial is  a git depository "
+    echo " The repository  celestial is  a git repository "
     fi
     
     
