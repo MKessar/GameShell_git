@@ -17,8 +17,13 @@ mkdir -p $GSH_HOME/Castle/Portals/
 mkdir -p $GSH_HOME/Castle/Main_building/Library
 
 cp $MISSION_DIR/truth_spell $GSH_HOME/Castle/Main_building/Library/
-
 cp $MISSION_DIR/glowing_finger_spell $GSH_HOME/Castle/Main_building/Library/
+cp $MISSION_DIR/truth_spell $GSH_TMP
+cp $MISSION_DIR/glowing_finger_spell $GSH_TMP
 
-
+cp $MISSION_DIR/clone.sh $GSH_TMP
+cp $MISSION_DIR/clean.sh $GSH_TMP
+cp $MISSION_DIR/add_remote_origin.sh $GSH_TMP
+cp $MISSION_DIR/remove_init_branches.sh $GSH_TMP
+cp -r $MISSION_DIR/solution_repo $GSH_TMP
 

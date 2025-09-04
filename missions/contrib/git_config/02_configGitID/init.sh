@@ -18,13 +18,15 @@
 #
 # It typically looks like
 _mission_init() {
-  # ...
-  mkdir -p $GSH_HOME/Castle/Portals/
-  if ! git --version > /dev/null 2 > /dev/null
-    then  echo "git not found"
-    return 1
+
+  if [ -f $GSH_TMP/skip_init ]
+  then
+    rm $GSH_TMP/skip_init
+  else
+    . $GSH_TMP/clone.sh &> /dev/null
+    . $GSH_TMP/remove_init_branches.sh &> /dev/null
+    . $GSH_TMP/add_remote_origin.sh
   fi
-  
   
 }
 _mission_init
