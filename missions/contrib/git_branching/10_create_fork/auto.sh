@@ -7,5 +7,7 @@
 # If you write this file, rename it to auto.sh
 
 git remote add myfork git@plmlab.math.cnrs.fr:mhaefele/al_jeit.git
+git push myfork spell --force
+echo "Warning: this auto sets git@plmlab.math.cnrs.fr:mhaefele/al_jeit.git as forked repository. If it fails, sorry you have to do this mission and set up your own fork..."
 gsh check
 
