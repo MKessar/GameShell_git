@@ -32,6 +32,8 @@ then
 else
   echo " user.name is defined"
 fi
+
+cp .git/config $GSH_TMP/gitconfig
     
 return 0 
 }

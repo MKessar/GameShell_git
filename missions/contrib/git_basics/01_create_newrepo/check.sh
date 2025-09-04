@@ -13,23 +13,31 @@
 _mission_check() {
 
   # verifier que le repertoire existe et est un depot git
-  
- if [ ! -d "$GSH_HOME/Castle/Portals/TrainingSpells" ]
-    then 
-      echo " There is no  TrainingSpells Forlder in Castle/Portals "
-      return 1
-    else
+
+  if [ ! -d "$GSH_HOME/Castle/Portals/TrainingSpells" ]
+  then 
+    echo " There is no  TrainingSpells Forlder in Castle/Portals "
+    return 1
+  else
     echo " The depository  TrainingSpells  exist"
-    fi
+  fi
 
   if [ ! -d $GSH_HOME/Castle/Portals/TrainingSpells/.git ]
-    then 
-      echo " The depository  TrainingSpells is not a git depository"
-      return 1
-    else
+  then 
+    echo " The depository  TrainingSpells is not a git depository"
+    return 1
+  else
     echo " The depository  TrainingSpells is  a git depository "
-    fi
-    
-    return 0 
+  fi
+
+  # Store the address of the fork of the user in $GSH_TMP to set it properly in the following init
+  cd $GSH_HOME/Castle/Portals/TrainingSpells
+  url=$(LANG=GB git remote show origin | grep "Push  URL" | tr -s ' ' | cut -d ' ' -f 4)
+  echo $url > $GSH_TMP/origin_url
+
+  # bring the user back in the previous directory
+  cd -
+
+  return 0 
 }
 _mission_check

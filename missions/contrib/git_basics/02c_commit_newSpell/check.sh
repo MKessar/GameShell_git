@@ -12,42 +12,33 @@
 
 _mission_check() {
 
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/glowing_finger_spell" ]
-    then 
-      echo " The file  glowing_finger_spell doesn't exist"
-      return 1
-    else
+  if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/glowing_finger_spell" ]
+  then 
+    echo " The file  glowing_finger_spell doesn't exist"
+    return 1
+  else
     echo " The file  glowing_finger_spell  exist"
-    fi
+  fi
   cd $GSH_HOME/Castle/Portals/TrainingSpells/
 
-  # verifier que le repertoire existe et est un depot git
-#    LANG=en_GB git status | grep -e "nothing to commit"
-       LANG=en_GB git status | grep -e "Changes to be committed:"
+  LANG=en_GB git status | grep -e "Changes to be committed:"
 
-test=$(echo $?)
-          
-  if [ $test -eq 0 ]
-    then 
-      echo " you should not have changes to commit"
-      return 1
-    else
-     LANG=en_GB git status 
-     
-     LANG=en_GB git status | grep -e "Your branch is ahead of"
-     test=$(echo $?)
-          
-     if [ $test -eq 1 ]
-        then
-        
-         echo " you should have changes to push"
-     
-        return 1
-     else
-       return 0
-     fi
-
+  if [ $? -eq 0 ]
+  then 
+    echo " you should not have changes to commit any more"
+    return 1
   fi
+
+
+  LANG=en_GB git status | grep -e "Your branch is ahead of"
+
+  if [ $? -eq 1 ]
+  then
+    echo " you should have changes to push"
+    return 1
+  fi
+
+  return 0
    
 }
 _mission_check
