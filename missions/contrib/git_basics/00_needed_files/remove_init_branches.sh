@@ -1,0 +1,1 @@
+git push origin -d init glowing_finger_spell_added truth_spell_added moving_spell_into_Chapter_1 README_updated truth_spell_removed revert 
