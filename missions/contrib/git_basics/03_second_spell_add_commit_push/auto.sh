@@ -7,7 +7,7 @@
 # If you write this file, rename it to auto.sh
 
 cd $GSH_HOME/Castle/Portals/TrainingSpells
-mv ../../Main_building/Library/truth_spell .
+cp $GSH_TMP/truth_spell .
 git add truth_spell
 git commit -m "truth spell added"
 git push

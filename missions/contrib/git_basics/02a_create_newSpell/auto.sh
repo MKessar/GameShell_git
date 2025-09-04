@@ -7,5 +7,5 @@
 # If you write this file, rename it to auto.sh
 
 cd $GSH_HOME/Castle/Portals/TrainingSpells
-mv ../../Main_building/Library/glowing_finger_spell .
+cp $GSH_TMP/glowing_finger_spell .
 gsh check

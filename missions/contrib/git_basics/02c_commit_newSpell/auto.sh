@@ -7,5 +7,7 @@
 # If you write this file, rename it to auto.sh
 
 cd $GSH_HOME/Castle/Portals/TrainingSpells
+# recreate properly main branch on the remote before doing the commit otherwise status does not show the correct message
+git push -u origin main
 git commit -m 'glowing finger spell added'
 gsh check

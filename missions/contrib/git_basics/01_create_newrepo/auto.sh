@@ -6,6 +6,7 @@
 # but it is better to do it the "intended" way.
 # If you write this file, rename it to auto.sh
 
-cd Castle/Portals/
-. $GSH_TMP/clone.sh
+cd $GSH_HOME/Castle/Portals/
+. $GSH_TMP/clone.sh &> /dev/null
+. $GSH_TMP/remove_init_branches.sh &> /dev/null
 gsh check
