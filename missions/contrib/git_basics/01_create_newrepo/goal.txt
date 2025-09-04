@@ -25,6 +25,8 @@ call it "TrainingSpells"
 
 On creation you can create a "README" file. We suggest you to do that
 
+You will also need to unprotect the main branch otherwise some missions will fail later. On the gitlab web interface, Settings => Repository => Protected branches => unprotect main branch
+
 git clone https://github.com/MyLogin/TrainingSpells.git
 
 
