@@ -1,37 +1,23 @@
 Mission goal
 ============
 
-According to the Head of the Magic Concil, some spellbooks have been altered in the past, due to avoidable mistakes. 
 
-The Head of the magic council has then sent an emmissary to your castle with an urgent request: all spells created from now on should be put on the SpellBook library (Github, gitlab...) and older ones sitting in Libraries also.
-
-When you arrived as a wizzard in your current Castle, the previous wizzard left a few spells he was working on, without synchronizing them with the SpellBook Library
-
-Saving the spell of the previous wizzard without the need of creating a spell yourself is a good training.
-
-
-You will start by creating a spellbook (repository) on at the interdimensional library (github).
-
-Go to the Portal room and clone your repository there
+Equiped with your rings, now:
+1. Create a spellbook (repository) on the interdimensional library (git.univ-pau.fr).
+2. Go to the Portal room of the Castle and clone your repository there
 
 
 Useful commands
 ===============
 
-
-You need to create a repository on github for training purpose only.
-
 call it "spellbook"
 
-On creation you can create a "README" file. We suggest you to do that
+On creation of the repository, it is suggested to create a generic "README" file.
 
 You will also need to unprotect the main branch otherwise some missions will fail later. On the gitlab web interface, Settings => Repository => Protected branches => unprotect main branch
 
-git clone https://github.com/MyLogin/spellbook.git
+To clone a repository:
+git clone REPOSITORY_URL
 
+Two URLs are proposed on the web interface, use the one to clone with SSH.
 
-
-Remarks
-===============
-
-you might need to create a token for github at that stage, github's documentation explains this.
