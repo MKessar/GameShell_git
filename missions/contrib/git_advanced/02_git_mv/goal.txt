@@ -9,10 +9,11 @@ Move your two spells into the first chapter.
 
 This can be done along with a stagged synchronisation.
 
+Warning: do not forget to create the directory before moving files !
+
 
 Useful commands
 ===============
-
 
 git add FOLDER_NAME
 

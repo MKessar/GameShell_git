@@ -21,13 +21,13 @@ Useful commands
 
 You need to create a repository on github for training purpose only.
 
-call it "TrainingSpells"
+call it "spellbook"
 
 On creation you can create a "README" file. We suggest you to do that
 
 You will also need to unprotect the main branch otherwise some missions will fail later. On the gitlab web interface, Settings => Repository => Protected branches => unprotect main branch
 
-git clone https://github.com/MyLogin/TrainingSpells.git
+git clone https://github.com/MyLogin/spellbook.git
 
 
 
