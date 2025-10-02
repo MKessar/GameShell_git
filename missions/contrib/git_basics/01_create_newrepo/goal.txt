@@ -1,16 +1,33 @@
 Mission goal
 ============
 
+According to the Head of the Magic Concil, some spellbooks have been altered in the past, due to avoidable mistakes. 
 
-Equiped with your rings, now:
-1. Create a spellbook (repository) on the interdimensional library (git.univ-pau.fr).
-2. Go to the Portal room of the Castle and clone your repository there
+The Head of the magic council has then sent an emmissary to your castle with an urgent request: all spells created from now on should be put on the SpellBook library (Github, gitlab...) and older ones sitting in Libraries also.
+
+When you arrived as a wizzard in your current Castle, the previous wizzard left a few spells he was working on, without synchronizing them with the SpellBook Library
+
+Saving the spell of the previous wizzard without the need of creating a spell yourself is a good training.
+
+
+
+The first step as a wizard is to craft your pair of rings (public and private ssh keys) that will allow you to authenticate without login/password to the remote repository. Equiped with your rings, you will be able to create your first spellbook (repository) and clone it locally.
+
+1. Create your pair of rings (ssh key)
+2. Upload it on your account on the interdimensional library (the remote repository git.univ-pau.fr).
+3. Create a spellbook (repository) on the interdimensional library (git.univ-pau.fr). "spellbook" should be the name of the project.
+4. Go to the Portal room of the Castle and clone your repository there
+
 
 
 Useful commands
 ===============
 
-call it "spellbook"
+Some instructions on how to create an ssh key:
+firefox https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+In our case, we will let the passphrase empty, so no need to setup the ssh agent
+
 
 On creation of the repository, it is suggested to create a generic "README" file.
 
