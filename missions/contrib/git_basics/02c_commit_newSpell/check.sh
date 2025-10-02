@@ -12,14 +12,14 @@
 
 _mission_check() {
 
-  if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/glowing_finger_spell" ]
+  if [ ! -e "$GSH_HOME/Castle/Portals/spellbook/glowing_finger_spell" ]
   then 
     echo " The file  glowing_finger_spell doesn't exist"
     return 1
   else
     echo " The file  glowing_finger_spell  exist"
   fi
-  cd $GSH_HOME/Castle/Portals/TrainingSpells/
+  cd $GSH_HOME/Castle/Portals/spellbook/
 
   LANG=en_GB git status | grep -e "Changes to be committed:"
 

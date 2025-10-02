@@ -11,7 +11,7 @@
 # It typically looks like
 
 _mission_check() {
-  cd $GSH_HOME/Castle/Portals/TrainingSpells/
+  cd $GSH_HOME/Castle/Portals/spellbook/
 
     LANG=en_GB git status | grep -e "up to date with"
 test=$(echo $?)
@@ -21,7 +21,7 @@ test=$(echo $?)
       echo " You did not pushed all of your modifications"
       return 1
     else
-      cd $GSH_HOME/Castle/Portals/TrainingSpells/
+      cd $GSH_HOME/Castle/Portals/spellbook/
 
        LANG=en_GB git status | grep -e "Changes to be committed:"
        test=$(echo $?)

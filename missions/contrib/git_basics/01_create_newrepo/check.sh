@@ -14,24 +14,24 @@ _mission_check() {
 
   # verifier que le repertoire existe et est un depot git
 
-  if [ ! -d "$GSH_HOME/Castle/Portals/TrainingSpells" ]
+  if [ ! -d "$GSH_HOME/Castle/Portals/spellbook" ]
   then 
-    echo " There is no  TrainingSpells Forlder in Castle/Portals "
+    echo " There is no spellbook Forlder in Castle/Portals "
     return 1
   else
-    echo " The repository  TrainingSpells  exist"
+    echo " The repository spellbook exists"
   fi
 
-  if [ ! -d $GSH_HOME/Castle/Portals/TrainingSpells/.git ]
+  if [ ! -d $GSH_HOME/Castle/Portals/spellbook/.git ]
   then 
-    echo " The repository  TrainingSpells is not a git repository"
+    echo " The repository spellbook is not a git repository"
     return 1
   else
-    echo " The repository  TrainingSpells is  a git repository "
+    echo " The repository spellbook is a git repository "
   fi
 
   # Store the address of the fork of the user in $GSH_TMP to set it properly in the following init
-  cd $GSH_HOME/Castle/Portals/TrainingSpells
+  cd $GSH_HOME/Castle/Portals/spellbook
   url=$(LANG=GB git remote show origin | grep "Push  URL" | tr -s ' ' | cut -d ' ' -f 4)
   echo $url > $GSH_TMP/origin_url
 

@@ -14,23 +14,23 @@ _mission_check() {
 
   # verifier que le repertoire existe et est un depot git
   
- if [ ! -d "$GSH_HOME/Castle/Portals/TrainingSpells" ]
+ if [ ! -d "$GSH_HOME/Castle/Portals/spellbook" ]
     then 
-      echo " The repository  TrainingSpells doesn't exist"
+      echo " The repository spellbook doesn't exist"
       return 1
     else
-    echo " The repository  TrainingSpells  exist"
+    echo " The repository spellbook  exist"
     fi
 
-  if [ ! -d $GSH_HOME/Castle/Portals/TrainingSpells/.git ]
+  if [ ! -d $GSH_HOME/Castle/Portals/spellbook/.git ]
     then 
-      echo " The repository TrainingSpells is not a git repository"
+      echo " The repository spellbook is not a git repository"
       return 1
     else
-      echo " The repository TrainingSpells is a git repository"
+      echo " The repository spellbook is a git repository"
   fi
    
-  cd $GSH_HOME/Castle/Portals/TrainingSpells
+  cd $GSH_HOME/Castle/Portals/spellbook
    
   LANG=en_GB git remote show origin | grep git@
 

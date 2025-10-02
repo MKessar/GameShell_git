@@ -1,10 +1,10 @@
 cd Castle/Portals/
-rm -rf TrainingSpells solution_repo
-mkdir TrainingSpells solution_repo
+rm -rf spellbook solution_repo
+mkdir spellbook solution_repo
 cd solution_repo
 git init --bare 
 
-cd ../TrainingSpells
+cd ../spellbook
 git init --initial-branch=main
 echo "Toy repository to learn git with [GameShell_git](https://github.com/MKessar/GameShell_git)" > README.md
 git add README.md

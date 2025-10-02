@@ -14,15 +14,15 @@ _mission_check() {
 
 
 
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/spellbook" ]
     then 
-      echo " TrainingSpells doesn't exist"
+      echo " spellbook doesn't exist"
       return 1
     else
-    echo " TrainingSpells  exist"
+    echo " spellbook  exist"
     fi
 
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/truth_spell" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/spellbook/truth_spell" ]
     then 
       echo " The file  truth_spell doesn't exist"
       return 1
@@ -31,7 +31,7 @@ _mission_check() {
     fi
 
   # verifier que le repertoire existe et est un depot git
-  cd $GSH_HOME/Castle/Portals/TrainingSpells/
+  cd $GSH_HOME/Castle/Portals/spellbook/
 
 LANG=en_GB git status | grep -e "Untracked"
  
@@ -52,7 +52,7 @@ test=$(echo $?)
       echo " You did not pushed all of your modifications"
       return 1
     else
-      cd $GSH_HOME/Castle/Portals/TrainingSpells/
+      cd $GSH_HOME/Castle/Portals/spellbook/
 
        LANG=en_GB git status | grep -e "Changes to be committed:"
        test=$(echo $?)

@@ -13,7 +13,7 @@
 _mission_check() {
 
 
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/truth_spell" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/spellbook/Chapter_1/truth_spell" ]
     then 
      echo " The file truth_spell does not exist"
     else
@@ -21,7 +21,7 @@ _mission_check() {
     return 1
     fi
 
- cd $GSH_HOME/Castle/Portals/TrainingSpells/
+ cd $GSH_HOME/Castle/Portals/spellbook/
 
 LANG=en_GB git status | grep -e "Untracked"
  
@@ -55,7 +55,7 @@ test=$(echo $?)
       echo " You did not pushed all of your modifications"
       return 1
     else
-      cd $GSH_HOME/Castle/Portals/TrainingSpells/
+      cd $GSH_HOME/Castle/Portals/spellbook/
 
        LANG=en_GB git status | grep -e "Changes to be committed:"
        test=$(echo $?)

@@ -1,8 +1,8 @@
 echo "clone.sh"
 cd $GSH_HOME/Castle/Portals
-cp -r $GSH_TMP/solution_repo $GSH_TMP/TrainingSpells
-git clone $GSH_TMP/TrainingSpells
-cd TrainingSpells
+cp -r $GSH_TMP/solution_repo $GSH_TMP/spellbook
+git clone $GSH_TMP/spellbook
+cd spellbook
 if [ -f $GSH_TMP/gitconfig ]
 then
   git config --local user.name $(cat $GSH_TMP/gitconfig | grep name | cut -d '=' -f2)

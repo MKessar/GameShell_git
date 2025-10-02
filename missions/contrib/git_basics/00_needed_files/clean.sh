@@ -17,6 +17,6 @@ then
   touch $GSH_TMP/skip_init
 else
   cd $GSH_HOME
-  rm -rf $GSH_HOME/Castle/Portals/TrainingSpells
-  rm -rf $GSH_TMP/TrainingSpells
+  rm -rf $GSH_HOME/Castle/Portals/spellbook
+  rm -rf $GSH_TMP/spellbook
 fi

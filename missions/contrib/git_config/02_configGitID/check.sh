@@ -11,7 +11,7 @@
 # It typically looks like
 
 _mission_check() {
-cd $GSH_HOME/Castle/Portals/TrainingSpells
+cd $GSH_HOME/Castle/Portals/spellbook
   
 git config user.email > /dev/null
   

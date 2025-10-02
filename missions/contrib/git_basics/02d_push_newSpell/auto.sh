@@ -6,6 +6,6 @@
 # but it is better to do it the "intended" way.
 # If you write this file, rename it to auto.sh
 
-cd $GSH_HOME/Castle/Portals/TrainingSpells
+cd $GSH_HOME/Castle/Portals/spellbook
 git push
 gsh check

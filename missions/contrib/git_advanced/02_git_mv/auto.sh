@@ -6,7 +6,7 @@
 # but it is better to do it the "intended" way.
 # If you write this file, rename it to auto.sh
 
-cd $GSH_HOME/Castle/Portals/TrainingSpells
+cd $GSH_HOME/Castle/Portals/spellbook
 mkdir Chapter_1
 git mv truth_spell glowing_finger_spell Chapter_1/
 git commit -m "moving spell into Chapter_1"

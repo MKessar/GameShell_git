@@ -24,4 +24,4 @@ Some instructions on how to create an ssh key:
 firefox https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 NB: in our case, we will let the passphrase empty, so no need to setup the ssh agent
-
+Then you can either :

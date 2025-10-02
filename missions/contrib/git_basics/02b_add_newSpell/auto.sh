@@ -7,7 +7,7 @@
 # If you write this file, rename it to auto.sh
 
 
-cd $GSH_HOME/Castle/Portals/TrainingSpells
+cd $GSH_HOME/Castle/Portals/spellbook
 git add glowing_finger_spell 
 gsh check
 

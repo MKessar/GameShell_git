@@ -12,7 +12,7 @@
 
 _mission_check() {
 
- if [ ! -e "$GSH_HOME/Castle/Portals/TrainingSpells/Chapter_1/truth_spell" ]
+ if [ ! -e "$GSH_HOME/Castle/Portals/spellbook/Chapter_1/truth_spell" ]
     then 
       echo " The file  truth_spell is not in Chapter_1"
       return 1
