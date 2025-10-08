@@ -1,0 +1,28 @@
+Mission goal
+============
+
+Now we want to merge the cheater branch. Inspect the repository and answer the following question.
+
+a. If we merge the cheater branch into the main branch, is it a fast-forward merge or a real merge ?
+
+Ensure you are on the main branch before answering the questions with gsh check.
+
+
+Useful commands
+===============
+
+To look at the history of a local repository putting one commit per line (--oneline), showing diverging and converging history (--graph) and showing all branches (--branches)
+git log --oneline --graph --branches
+
+To display the content of a text file in the terminal
+cat FILE_NAME
+
+To put HEAD on anywhere in the repository and update the working directory:
+git checkout TREE_ISH
+TREE_ISH can be:
+- a branch name
+- a tag
+- any commit referenced by its id, for instance 30c900f
+- any commit being an ancestor of a branch or HEAD, for instance HEAD^ references the immediate ancestor of HEAD, flame^^ references tha ancestor of the ancestor of the commit pointed by flame.
+
+

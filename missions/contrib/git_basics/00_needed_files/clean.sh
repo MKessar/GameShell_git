@@ -19,4 +19,5 @@ else
   cd $GSH_HOME
   rm -rf $GSH_HOME/Castle/Portals/spellbook
   rm -rf $GSH_TMP/spellbook
+  echo "Warning: repository reset, you might have issue when pushing. If yes add --force option when pushing. Jafar will be author of some commits, but it is ok, he knows what he is doing !"
 fi

@@ -18,8 +18,17 @@ mkdir -p $GSH_HOME/Castle/Main_building/Library
 
 cp $MISSION_DIR/truth_spell $GSH_HOME/Castle/Main_building/Library/
 cp $MISSION_DIR/glowing_finger_spell $GSH_HOME/Castle/Main_building/Library/
+cp $MISSION_DIR/flame_spell $GSH_HOME/Castle/Main_building/Library/
+cp -r $MISSION_DIR/cheater $GSH_HOME/Castle/Main_building/Library/
+cp -r $MISSION_DIR/beer $GSH_HOME/Castle/Main_building/Library/
+
 cp $MISSION_DIR/truth_spell $GSH_TMP
 cp $MISSION_DIR/glowing_finger_spell $GSH_TMP
+cp $MISSION_DIR/flame_spell $GSH_TMP
+cp -r $MISSION_DIR/cheater $GSH_TMP
+cp -r $MISSION_DIR/beer $GSH_TMP
+
+cp $MISSION_DIR/amplifier_conflict_fixed $GSH_TMP
 
 cp $MISSION_DIR/clone.sh $GSH_TMP
 cp $MISSION_DIR/clean.sh $GSH_TMP

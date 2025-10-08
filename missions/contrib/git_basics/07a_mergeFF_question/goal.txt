@@ -1,0 +1,36 @@
+Mission goal
+============
+
+We have now many versions of our spellbook, the main one and several of them containing one new spell each. The idea is to merge all these contributions in the main version, so the main branch.
+
+We will start by the flame branch. Before merging it, let us inspect the repository in order to answer the following questions.
+
+a. Does the flame spell exist on the main branch ?
+b. Does the flame spell exist on the flame branch ?
+c. Does the truth spell exist on the main branch ?
+d. Does the truth spell exist on the flame branch ?
+e. If we merge the flame branch into the main branch, is it a fast-forward merge or a real merge ?
+f. After the merge will the flame spell appear on the main branch ?
+
+
+Ensure you are on the main branch before answering the questions with gsh check.
+
+
+Useful commands
+===============
+
+To look at the history of a local repository putting one commit per line (--oneline), showing diverging and converging history (--graph) and showing all branches (--branches)
+git log --oneline --graph --branches
+
+To display the content of a text file in the terminal
+cat FILE_NAME
+
+To put HEAD on anywhere in the repository and update the working directory:
+git checkout TREE_ISH
+TREE_ISH can be:
+- a branch name
+- a tag
+- any commit referenced by its id, for instance 30c900f
+- any commit being an ancestor of a branch or HEAD, for instance HEAD^ references the immediate ancestor of HEAD, flame^^ references tha ancestor of the ancestor of the commit pointed by flame.
+
+

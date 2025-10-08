@@ -7,7 +7,7 @@
 # If you write this file, rename it to auto.sh
 
 cd $GSH_HOME/Castle/Portals/spellbook
-git revert HEAD
+git revert HEAD --no-edit
 git push
 gsh check
 

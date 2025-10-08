@@ -1,0 +1,27 @@
+Mission goal
+============
+
+The three spells are now merged into the main version of your spell book ! 
+
+Please note that everything happened locally in your spell book, we were completely disconnected from the remote repository. Let us now perform a merge operation on the remote repository and pull back the result on your local spell book.
+
+1. Push the main branch on the remote repository, if not deon already
+2. Create a new spell  in your local spell book (find a creative name for the file !)
+3. Add it to your spell book on branch called new_spell
+4. Push the new_spell branch on the remote repository
+5. Open a Merge Request on the web interface of the remote repository
+6. Merge it on the web interface
+7. Pull the result back locally
+
+Useful commands
+===============
+
+To push commits from the current branch to the remote repository
+git push
+
+To update your local branch from the remote
+git pull
+
+
+
+

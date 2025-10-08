@@ -1,0 +1,44 @@
+Mission goal
+============
+
+Finally add the beer spell into the main version of your spellbook by realising a merge.
+
+You might encounter a conflict on the amplifier. You need some basics on magic to solve this: an amplifier can be used by several spells as long as all the spells are listed in it.
+
+Useful commands
+===============
+
+To look at the history of a local repository putting one commit per line (--oneline), showing diverging and converging history (--graph) and all local branches even if they are not part of the history of the commit pointed by HEAD
+git log --oneline --graph --branches
+
+
+To merge a branch. Ensure you are on the branch you want to merge into and then, to merge the branch BRANCH_NAME into it
+git merge BRANCH_NAME
+
+
+## What is a conflict ?
+A conflict occurs when git is asked to merge two commits where the same line of the same file is modified in both commits.
+In our case, the spell on the power branch has its first line modified and spell on the main branch has also its first line modified.
+
+When a conflict occurs, git modifies the file in the working directoy like this:
+     <<<<<<< HEAD
+     cheater_spell
+     =======
+     beer_spell
+     >>>>>>> power
+
+Between the <<< and the === the version of the branch pointed by HEAD, so in our case the main branch
+Between the === and the >>> the version of beer branch
+Git cannot decide which one is the right one, you have to decide if the first version has be kept, the second, a mix of both, yet a third version... 
+
+## How to fix a conflict ?
+
+-   Replace everything between the <<< and the >>> by the correct version
+-   git add FILE_NAME
+-   git commit
+-   Automatic commit message indicating conflict resolution
+
+
+
+
+

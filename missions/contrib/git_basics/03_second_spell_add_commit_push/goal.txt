@@ -10,18 +10,9 @@ You can now synchronisze the spell of truth (truth_spell) as you did for the glo
 Useful commands
 ===============
 
-
-You need to apply the same procedure in a single mission.
-
-
-git add FILENAME : start tracking the file FILENAME
+git add FILENAME : start tracking the file FILENAME or add its modification to the staging area
 
 git commit -m 'COMMIT_MESSAGE'
 
 git push 
 
-
-Optional:
-
-
-source spell.sh   : run the script spell.sh 

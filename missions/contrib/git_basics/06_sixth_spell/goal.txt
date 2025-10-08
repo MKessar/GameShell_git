@@ -1,0 +1,21 @@
+Mission goal
+============
+
+Finally a last spell to be integrated in order to recover from our efforts: a pint of beer !
+
+Like previously, you are not sure to integrate it directly in the main version of your spellbook, so you will add the spell on a branch called beer CREATED FROM the main branch.
+
+Caution: without amplifier, the spell only creates a small beer, to get a pint you need to copy both the spell file and the amplifier in your spell book (and not the entire directory).
+
+Useful commands
+===============
+
+To create a branch:
+git branch BRANCH_NAME [TREE_ISH]
+TREE_ISH is optional, by default it is HEAD, but one can put here a commit identifier, a branch name, a tag, ..., anything that refers to a commit
+
+To start tracking the file FILENAME or add its modification to the staging area:
+git add FILENAME
+
+To create a commit with a COMMIT_MESSAGE as comment for the commit:
+git commit -m 'COMMIT_MESSAGE'
