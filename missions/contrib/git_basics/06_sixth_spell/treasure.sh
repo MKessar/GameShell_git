@@ -22,7 +22,7 @@ for ((i=INNER_START;i<=INNER_END;i++)); do
   left_mousse[$i]=" "
 done
 
-while true; do
+while [ $frame -lt 16 ] ; do
   clear
 
   # --- Mousse animée sur le dessus ---

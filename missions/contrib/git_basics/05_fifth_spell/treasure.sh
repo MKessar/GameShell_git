@@ -51,7 +51,7 @@ draw_scroll() {
 
     echo "    _________________________________________________"
     echo "   /                                                 \\"
-    echo "  /          Spell Writing Class Test                \\"
+    echo "  /               Increasing mark                    \\"
     echo " |                                                   |"
     echo " |                                                   |"
 
@@ -86,7 +86,7 @@ done
 clear
 echo "    ______________________________________________"
 echo "   /                                              \\"
-echo "  /             Spell Writing Class Test          \\"
+echo "  /               Increasing mark                    \\"
 echo " |                                                |"
 echo " |                                                |"
 echo " |                                                |"

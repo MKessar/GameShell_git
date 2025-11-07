@@ -28,11 +28,8 @@ ${RED}           .oOo.${RESET}\n\
 ${RED}                      ${RESET}"
 )
 
-while true; do
-  for f in "${frames[@]}"; do
-    clear
-    printf "%b\n" "$f"
-    sleep 0.15
-  done
+clear
+for f in "${frames[@]}"; do
+  printf "%b\n" "$f"
 done
 
