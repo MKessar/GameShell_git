@@ -6,7 +6,12 @@ then
   git remote rm origin &> /dev/null
   git remote add origin $origin_url &> /dev/null
   git push -u origin main --force &> /dev/null
-  echo "Info: environment reset, your remote repository has been updated with the predefined environment for this mission"
+  if [ $? -eq 1 ]
+  then
+    echo "Error: Could not reset remote repository. Are you sure you have unprotected the main branch ?"
+  else
+    echo "Info: environment reset, your remote repository has been updated with the predefined environment for this mission"
+  fi
 else
   echo "Warning: could not retrieve the url of your repository, please add it again"
   echo "git remote rm origin"

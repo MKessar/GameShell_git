@@ -9,11 +9,8 @@
 
 # back to HOM in order to avoid getcwd error
 
-if [ $GSH_LAST_ACTION = check_false ] || [ $GSH_LAST_ACTION = check_true ] 
+if [ $GSH_LAST_ACTION = check_false ] || [ $GSH_LAST_ACTION = check_true ]  || [ $GSH_LAST_ACTION = exit ] 
 then
-  echo "Environment kept. If you want to start again from a clean one:"
-  echo "gsh reset"
-  echo ""
   touch $GSH_TMP/skip_init
 else
   cd $GSH_HOME
