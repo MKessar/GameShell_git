@@ -1,7 +1,7 @@
 Mission goal
 ============
 
-We will merge now those improvements (adding_light and adding_earth) and contribute also ourself to the enchantment. But one step after the other, let us inspect first the history and the content of each branch.
+We will merge now those improvements (adding_light and adding_earth) and contribute also ourself to the enchantment. But one step after the other, let us inspect first the history and the content of each branch for the dragon_killer.spell.
 
 Look at the history of the enchantment:
 a. if we want to merge the adding_light branch into spell, which kind of merge it is ? a fast-forward merge ? or a real merge ?
@@ -12,9 +12,9 @@ c. What is the first ingredient of the enchantment on the spell branch
 d. What is the first ingredient of the enchantment on the adding_light branch
 e. What is the first ingredient of the enchantment on the adding_earth branch
 
-Look at the arcane book somewhere in the main tower to learn about enchantment structure how to modify them. Then create a branch named power, checkout it, implement the modification and create a commit.
+Look at the arcane book somewhere in the Library to learn about enchantment structure. 
 
-Ensure your HEAD is on the spell branch before answering the questions.
+Start answering the question by typing `gsh check`. Ensure your HEAD is on the spell branch before.
 
 
 Useful commands

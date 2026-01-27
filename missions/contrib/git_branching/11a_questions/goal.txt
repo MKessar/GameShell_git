@@ -27,12 +27,13 @@ Once this `work` branch is set up the idea is to merge all contributions of the 
 3. yes on the dragon_killer.spell file
 4. yes on the LICENSE file
 
-Once this `work` branch contains all contributions of the repository, the idea is to merge it into our `spell` branch. Do you expect any conflict here ? As it is hard to foresee it from here, just answer the question looking at what would happen if any of the three contributions would be merged into `spell` 
+Once this `work` branch contains all contributions of the repository, the idea is to merge it into our `spell` branch. Do you expect any conflict here ? As it is hard to foresee it from here, just answer the question looking at what would happen if any of the three contributions would be merged into `spell`   
 1. no
 2. yes on the README.md file
 3. yes on the dragon_killer.spell file
 4. yes on the LICENSE file
 
+When you think you have all answers, type `gsh check` to start answering the questions.
 
 Useful commands
 ===============
