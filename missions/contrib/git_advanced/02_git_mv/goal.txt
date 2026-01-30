@@ -1,11 +1,9 @@
 Mission goal
 ============
 
-It can be conveniet to make chapters for your spells. 
+It can be convenient to make chapters for your spells. 
 
-Create a First Chapter(called Chapter_1) and move both spells into that folder.
-
-Move your two spells into the first chapter.
+Create a First Chapter (called Chapter_1) and move your two spells into that folder.
 
 This can be done along with a stagged synchronisation.
 
