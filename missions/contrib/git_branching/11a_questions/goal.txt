@@ -52,7 +52,7 @@ REF_LOG is optional and can be:
 - HEAD (default behaviour when REF_LOG is not given)
 - a branch name, either local or referencing a remote one like hogwarts/spell
 - any commit referenced by its id, for instance 30c900f
-- any commit being an ancestor of a branch or HEAD, for instance HEAD^ references the immediate ancestor of HEAD, add_rune^^ references tha ancestor of the ancestor of the commit pointed by add_rune.
+- any commit being an ancestor of a branch or HEAD, for instance HEAD^ references the immediate ancestor of HEAD, add_rune^^ references the ancestor of the ancestor of the commit pointed by add_rune.
 
 To look at differences between revisions and working directory
 git diff [REF_LOG1 [REF_LOG2]]

@@ -3,7 +3,7 @@ Mission goal
 
 Althought the glowing finger spell is obviously usefull, the usefullness of the truth spell seems inexistant.
 
-Remove the truth spell from your your spellbook.
+Remove the truth spell from your spellbook.
 
 
 Useful commands
