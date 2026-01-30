@@ -41,9 +41,9 @@ _mission_check() {
   fi
 
   current_branch=$(git branch --show-current)
-  if [ "$current_branch" != "beer" ]
+  if [ "$current_branch" != "main" ]
     then
-        echo "You are not on the beer branch..."
+        echo "You are not on the main branch..."
         return 1
   fi
 

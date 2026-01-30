@@ -9,9 +9,20 @@ Check the updated PortalBook and get in touch with this wizard. The objective is
 
 Until now you only fetched enchantment fragments (commits) and gathered (merged) them locally.
 In order to share spells with other wizards you will need an online place where to share them.
-So, one wizard forks the al_jeit portal (repository) on the gitlab web interface and creates a remote named `myfork` that will point to the newly created fork.
-The other(s) wizard(s) fork(s) the newly created forked repository by the first wizard on the gitlab web interface and creates also a remote named `myfork` that will point to his/her own fork.
-Finally push your `spell` branch on the fork and check everything is fine on the web interface.
+You should have, of course, write access on this online place. So the al_jeit repository you cloned initially is not the right place.
+That's where the idea of `forks` kicks in: you can replicate an existing public repository on your personal namespace and then have complete write acces on it. 
+
+Consider the wizard team composed by Tim, Bill and lola
+1. Tim forks the al_jeit portal (repository) on the gitlab web interface.
+2. Tim creates a remote named `myfork` that will point to the newly created fork.
+3. Tim pushes his `spell` branch on his fork and checks everything is fine on the web interface.
+4. Bill and Lola fork the newly created forked repository by Tim on the gitlab web interface.
+5. Bill and Lola create also a remote named `myfork` that will point to the newly created fork.
+6. Bill and Lola fetch the `spell` branch from their fork and check that commits come actually from Tim.
+7. Bill and Lola move their `spell` branch on the commit pointed by the spell branch on the remote fork they just fetched.
+
+To validate the mission, each wizard should have a remote named `myfork` and a `spell` branch in sync with the remote.
+
 
 Useful commands
 ===============
@@ -21,3 +32,16 @@ git remote add REMOTE_NAME REPOSITORY_URL
 
 Push a branch BRANCH_NAME on the remote REMOTE_NAME
 git push REMOTE_NAME BRANCH_NAME
+
+Fetch commits from a remote
+git fetch REMOTE_NAME 
+
+To move branch BRANCH_NAME on commit REF_LOG when HEAD is not pointing at BRANCH_NAME
+git branch -f BRANCH_NAME REF_LOG
+
+REF_LOG is optional and can be:
+- HEAD (default behaviour when REF_LOG is not given)
+- a branch name, either local or referencing a remote one like hogwarts/spell
+- any commit referenced by its id, for instance 30c900f
+- any commit being an ancestor of a branch or HEAD, for instance HEAD^ references the immediate ancestor of HEAD, add_rune^^ references the ancestor of the ancestor of the commit pointed by add_rune.
+

@@ -39,7 +39,7 @@ _mission_check() {
   uptodate=$(LANG=GB git remote show myfork | grep "spell pushes to spell" | grep "up to date")
   if [ "$uptodate" = "" ]
     then
-        echo "Branch spell has not been pushed to the forked repository..."
+        echo "Branch spell is not in sync with repository... Either spell branch has not been pushed or your local spell branch does not point at the commit pointed by the spell branch on the remote fork."
         return 1
   fi
 

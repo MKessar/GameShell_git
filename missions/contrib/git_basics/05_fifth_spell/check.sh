@@ -22,20 +22,25 @@ _mission_check() {
     return 1
   fi
 
-  if [ ! -e "$GSH_HOME/Castle/Portals/spellbook/$spell_name" ]
+  cd $GSH_HOME/Castle/Portals/spellbook/
+
+  search=$(find -name $spell_name)
+  if [ $search = "" ]
   then 
     echo " The file $spell_name doesn't exist"
     return 1
+  else
+    echo " The file $spell_name exists"
   fi
 
-  if [ ! -e "$GSH_HOME/Castle/Portals/spellbook/amplifier" ]
+  search=$(find -name amplifier)
+  if [ $search = "" ]
   then 
     echo " The file amplifier doesn't exist"
     return 1
+  else
+    echo " The file amplifier exists"
   fi
-
-  # verifier que le repertoire existe et est un depot git
-  cd $GSH_HOME/Castle/Portals/spellbook/
 
   LANG=en_GB git status | grep -e "Untracked"
 
@@ -72,14 +77,17 @@ _mission_check() {
 
   # check if files are in the repo
   spell=$(git ls-tree $expected_name $spell_name)
-  if [ "$spell" = "" ]
+  spell2=$(git ls-tree $expected_name Chapter_1/$spell_name)
+
+  if [ "$spell" = "" ] && [ "$spell2" = "" ]
   then
     echo "Spell $spell_name not in repository, at least not on $expected_name branch..."
     return 1
   fi
 
   amplifier=$(git ls-tree $expected_name amplifier)
-  if [ "$amplifier" = "" ]
+  amplifier2=$(git ls-tree $expected_name Chapter_1/amplifier)
+  if [ "$amplifier" = "" ] && [ "$amplifier2" = "" ]
   then
     echo "Amplifier not in repository, at least not on $expected_name branch..."
     return 1

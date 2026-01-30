@@ -21,10 +21,13 @@ _mission_check() {
     echo " spellbook doesn't exist"
     return 1
   else
-    echo " spellbook  exist"
+    echo " spellbook  exists"
   fi
 
-  if [ ! -e "$GSH_HOME/Castle/Portals/spellbook/$spell_name" ]
+  cd $GSH_HOME/Castle/Portals/spellbook/
+
+  search=$(find -name $spell_name)
+  if [ $search = "" ]
   then 
     echo " The file $spell_name doesn't exist"
     return 1
@@ -32,8 +35,6 @@ _mission_check() {
     echo " The file $spell_name exists"
   fi
 
-  # verifier que le repertoire existe et est un depot git
-  cd $GSH_HOME/Castle/Portals/spellbook/
 
   LANG=en_GB git status | grep -e "Untracked"
 
@@ -68,8 +69,9 @@ _mission_check() {
   fi
 
   spell=$(git ls-tree flame $spell_name)
+  spell2=$(git ls-tree flame Chapter_1/$spell_name)
 
-  if [ "$spell" = "" ]
+  if [ "$spell" = "" ] && [ "$spell2" = "" ]
   then
     echo "Spell $spell_name not in repository, at least not on $expected_name branch..."
     return 1
